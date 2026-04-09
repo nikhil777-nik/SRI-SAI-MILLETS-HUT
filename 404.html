@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - Sri Sai Millets Hut</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <style>
+        .error-section {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: var(--accent-dark);
+            color: white;
+            padding: 0 20px;
+        }
+
+        .error-code {
+            font-size: 120px;
+            font-family: var(--font-heading);
+            color: var(--accent-gold);
+            line-height: 1;
+            margin-bottom: 16px;
+        }
+
+        .error-title {
+            font-size: 32px;
+            font-family: var(--font-heading);
+            margin-bottom: 24px;
+        }
+
+        .error-desc {
+            font-size: 16px;
+            color: rgba(255,255,255,0.7);
+            max-width: 500px;
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body style="background-color: var(--accent-dark); margin: 0; padding: 0;">
+
+    <section class="error-section">
+        <div class="reveal hover-lift">
+            <div class="error-code">404</div>
+            <h1 class="error-title">Oops! You've Wandered Off the Menu</h1>
+            <p class="error-desc">
+                The page you are looking for doesn't exist or has been moved. 
+                But don't worry, our delicious and healthy millets are still waiting for you right back on the homepage!
+            </p>
+            <a href="index.html" class="btn-primary" style="padding: 14px 36px; font-size: 14px; text-decoration: none;">Return Home</a>
+        </div>
+    </section>
+
+    <script>
+        // Reveal Logic
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    revealObserver.unobserve(entry.target); 
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+    </script>
+</body>
+</html>

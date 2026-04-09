@@ -17,7 +17,9 @@
         <div class="logo">SRI SAI MILLETS HUT</div>
         <ul class="nav-links">
             <li><a href="#home" class="active" id="nav-home">Home</a></li>
+            <li><a href="#about" id="nav-about">About</a></li>
             <li><a href="#menu" id="nav-menu">Menu</a></li>
+            <li><a href="our-story.html" id="nav-story">Our Story</a></li>
             <li><a href="#location" id="nav-location">Location</a></li>
         </ul>
     </nav>
@@ -35,11 +37,27 @@
         </div>
     </section>
 
+    <!-- About Section -->
+    <section id="about" class="menu-section mt-32" style="text-align: center; max-width: 800px;">
+        <span class="eyebrow reveal hover-lift">THE MILLET REVOLUTION</span>
+        <h2 class="section-title reveal hover-lift">Reviving Ancestral Wellness</h2>
+        <p class="muted-text mb-24 reveal hover-lift" style="font-size: 16px; line-height: 1.8;">
+            At Sri Sai Millets Hut, we believe that true health begins with what we put on our plates. 
+            We have dedicated ourselves to reviving the lost glory of millets—ancient grains that naturally 
+            nourish the body and sustain the earth. Our culinary experts skillfully blend traditional 
+            Nawabi spices with these potent superfoods, delivering a taste that respects history while 
+            empowering your modern lifestyle.
+        </p>
+        <div class="reveal hover-lift" style="margin-top: 32px;">
+            <a href="our-story.html" class="btn-primary" style="display:inline-block; padding: 12px 32px; font-size: 13px;">Read Our Full Story</a>
+        </div>
+    </section>
+
     <!-- Menu Navigation -->
     <div class="menu-tabs-wrapper" id="menu">
         <div class="menu-tabs">
-            <button class="tab active" onclick="scrollToSection('tiffins')">TIFFINS</button>
-            <button class="tab" onclick="scrollToSection('evening-specials')">EVENING SPECIALS</button>
+            <button class="tab active" onclick="scrollToSection(event, 'tiffins')">TIFFINS</button>
+            <button class="tab" onclick="scrollToSection(event, 'evening-specials')">EVENING SPECIALS</button>
 
         </div>
     </div>
@@ -231,17 +249,19 @@
     <button id="back-to-top" class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
 
     <script>
-        function scrollToSection(id) {
+        function scrollToSection(e, id) {
             const el = document.getElementById(id);
             if (el) {
                 // Determine offset for header to look nice and avoid covered content by sticky menu
                 const y = el.getBoundingClientRect().top + window.scrollY - 100;
                 window.scrollTo({top: y, behavior: 'smooth'});
             }
-            document.querySelectorAll('.tab').forEach(tab => {
-                tab.classList.remove('active');
-            });
-            event.target.classList.add('active');
+            if (e && e.currentTarget) {
+                document.querySelectorAll('.tab').forEach(tab => {
+                    tab.classList.remove('active');
+                });
+                e.currentTarget.classList.add('active');
+            }
         }
         
         // Simple IntersectionObserver to highlight tab on scroll
@@ -266,40 +286,50 @@
 
         // Top Navigation scroll logic
         const navHome = document.getElementById('nav-home');
+        const navAbout = document.getElementById('nav-about');
         const navMenu = document.getElementById('nav-menu');
         const navLocation = document.getElementById('nav-location');
+        
+        const aboutSection = document.getElementById('about');
+        const menuSection = document.getElementById('menu');
         const locationSection = document.getElementById('location');
 
         window.addEventListener('scroll', () => {
-            // Check location intersection
-            const locationRect = locationSection.getBoundingClientRect();
-            if (locationRect.top <= 200) {
-                navHome.classList.remove('active');
-                navMenu.classList.remove('active');
-                navLocation.classList.add('active');
-                return;
-            }
+            if(!navHome || !navAbout || !navMenu || !navLocation) return;
+            
+            // Default remove all
+            navHome.classList.remove('active');
+            navAbout.classList.remove('active');
+            navMenu.classList.remove('active');
+            navLocation.classList.remove('active');
 
-            // Normal logic for Hero vs Menu
-            if (window.scrollY > 300) { 
-                navHome.classList.remove('active');
-                navLocation.classList.remove('active');
+            // Find current section
+            let scrollY = window.scrollY + 200; // offset
+
+            if (locationSection && locationSection.offsetTop <= scrollY) {
+                navLocation.classList.add('active');
+            } else if (menuSection && menuSection.offsetTop <= scrollY) {
                 navMenu.classList.add('active');
+            } else if (aboutSection && aboutSection.offsetTop <= scrollY) {
+                navAbout.classList.add('active');
             } else {
                 navHome.classList.add('active');
-                navMenu.classList.remove('active');
-                navLocation.classList.remove('active');
             }
         });
 
         // Add smooth scrolling to nav links
         document.querySelectorAll('.nav-links a').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
+                const href = this.getAttribute('href');
+                if (!href.startsWith('#')) return; // Let regular links navigate normally
+                
+                const targetId = href.substring(1);
                 const targetEl = document.getElementById(targetId);
+                
                 if (targetEl) {
-                    targetEl.scrollIntoView({ behavior: 'smooth' });
+                    e.preventDefault();
+                    const y = targetEl.getBoundingClientRect().top + window.scrollY - 80;
+                    window.scrollTo({top: y, behavior: 'smooth'});
                 }
             });
         });
