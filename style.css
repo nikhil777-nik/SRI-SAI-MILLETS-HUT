@@ -19,6 +19,10 @@
     --container-width: 1000px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -596,23 +600,37 @@ a {
 .footer-links a:hover { color: var(--accent-gold); }
 
 /* Section Backgrounds */
-#evening-specials { background-image: url('assets/evening_curry_bg.png'); }
+#evening-specials { background-image: url('https://static.toiimg.com/thumb/82571270.cms?imgsize=443554&width=800&height=800'); }
 #tiffins { background-image: url('assets/morning_tiffins_bg.png'); margin-top: 0; }
 #rotis-curries { background-image: url('assets/rotis_curries_bg.png'); }
 
 /* Beautiful UI Enhancements */
-.reveal {
+.reveal, .reveal-left, .reveal-right, .reveal-scale {
     opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform, opacity;
+    transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
 }
-.reveal.active {
+.reveal {
+    transform: translateY(30px);
+}
+.reveal-left {
+    transform: translateX(-40px);
+}
+.reveal-right {
+    transform: translateX(40px);
+}
+.reveal-scale {
+    transform: scale(0.95);
+}
+
+.reveal.active, .reveal-left.active, .reveal-right.active, .reveal-scale.active {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate(0) scale(1);
 }
 
 .hover-lift {
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    will-change: transform, box-shadow;
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1) !important;
 }
 .hover-lift:hover {
     transform: translateY(-8px);

@@ -31,7 +31,7 @@
             <p>Experience the renaissance of ancient grains. Curated with traditional Nawabi spices and modern nutritional science.</p>
         </div>
         <div class="hero-image">
-            <img src="assets/hero_dosa.png" alt="Millet Dosa Thali">
+            <img src="assets/hero_dosa.png" alt="Millet Dosa Thali" fetchpriority="high" decoding="async">
         </div>
     </section>
 
@@ -40,8 +40,7 @@
         <div class="menu-tabs">
             <button class="tab active" onclick="scrollToSection('tiffins')">TIFFINS</button>
             <button class="tab" onclick="scrollToSection('evening-specials')">EVENING SPECIALS</button>
-            <button class="tab" onclick="scrollToSection('meals-biryani')">MEALS & BIRYANI</button>
-            <button class="tab" onclick="scrollToSection('rotis-curries')">ROTIS & CURRIES</button>
+
         </div>
     </div>
 
@@ -53,6 +52,7 @@
                 <div class="tiffins-grid">
                     <div class="tiffins-left">
                         <h3 class="subsection-title">The Idly Gallery</h3>
+
                         <div class="menu-item-row reveal hover-lift">
                             <div>
                                 <span>Idly 2</span>
@@ -128,8 +128,8 @@
                                 <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter Upma Pesarattu</span><strong style="color:var(--accent-gold);">70/-</strong></li>
                                 <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter Paneer Pesarattu</span><strong style="color:var(--accent-gold);">90/-</strong></li>
                                 <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Ghee Plain Pesarattu</span><strong style="color:var(--accent-gold);">70/-</strong></li>
-                                <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Ghee Masala Pesarattu</span><strong style="color:var(--accent-gold);">80/-</strong></li>
                                 <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Ghee Upma Pesarattu</span><strong style="color:var(--accent-gold);">80/-</strong></li>
+                                <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Ghee Masala Pesarattu</span><strong style="color:var(--accent-gold);">80/-</strong></li>
                                 <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Ghee Onion Pesarattu</span><strong style="color:var(--accent-gold);">80/-</strong></li>
                             </ul>
                         </div>
@@ -182,109 +182,7 @@
         </div>
     </section>
 
-    <!-- Grand Meals & Biryani Section -->
-    <section id="meals-biryani" class="dark-theme-section">
-        <div class="dark-theme-overlay">
-            <div class="dark-theme-content">
-                <div class="section-header-line">
-                    <h2 class="section-title">Grand Meals & Biryani</h2>
-                    <div class="line"></div>
-                </div>
-                
-                <div class="meals-grid">
-                    <div class="meals-left card-dark-translucent">
-                        <span class="eyebrow small">ROYAL BIRYANI</span>
-                        <h3 class="subsection-title">Millet Biryani Art</h3>
-                        
-                        <div class="biryani-items mt-24">
-                            <div class="biryani-item">
-                                <div class="icon-circle" style="background-color:rgba(255,255,255,0.1)">🐔</div>
-                                <div>
-                                    <h4>Chicken Fry Biryani</h4>
-                                    <p class="muted-text">Chef's secret spice blend</p>
-                                </div>
-                            </div>
-                            <div class="biryani-item">
-                                <div class="icon-circle" style="background-color:rgba(255,255,255,0.1)">🥗</div>
-                                <div>
-                                    <h4>Veg / Egg Biryani</h4>
-                                    <p class="muted-text">Aromatic garden-fresh ingredients</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="biryani-img-container">
-                            <img src="assets/chicken_biryani.png" alt="Chicken Biryani" class="biryani-img">
-                        </div>
-                    </div>
 
-                    <div class="meals-right">
-                        <div class="andhra-meals-box card-dark-translucent">
-                            <h3 class="subsection-title">Andhra Meals</h3>
-                            <p class="muted-text">The soul of the Deccan on a platter</p>
-                            <div class="dish-icon">🍴</div>
-                            <strong class="special-veg">Special Meals Veg available</strong>
-                        </div>
-                        <div class="combo-boxes">
-                            <div class="combo-box card-dark-translucent text-center">
-                                <div class="icon-large">🍲</div>
-                                <h4>Veg Combo</h4>
-                                <p class="muted-text">Perfect Balance</p>
-                            </div>
-                            <div class="combo-box card-dark-translucent text-center" style="border-color: var(--accent-gold);">
-                                <h4 style="color: var(--accent-gold)">Comfort Classics</h4>
-                                <p class="white-faded">Sambar Rice<br>Curd Rice</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Roti Basket & Curries -->
-    <section id="rotis-curries" class="dark-theme-section">
-        <div class="dark-theme-overlay">
-            <div class="dark-theme-content">
-                <div class="two-col-layout">
-                    <div class="col">
-                        <h2 class="section-title">The Roti Basket</h2>
-                        <ul class="list-lines">
-                            <li><span style="color:white; font-size: 18px;">Plain Roti</span></li>
-                            <li><span style="color:white; font-size: 18px;">Jowar Roti</span></li>
-                            <li><span style="color:white; font-size: 18px;">Bajra Roti</span></li>
-                            <li><span style="color:white; font-size: 18px;">Raagi Roti</span></li>
-                        </ul>
-                        <div class="multi-rotis mt-32" style="background: rgba(0,0,0,0.3); padding: 16px; border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,0.1);">
-                            <strong>Multi Millets Roti</strong> 
-                            <span class="tag tag-signature pull-right">ESSENTIAL</span>
-                        </div>
-                    </div>
-                    
-                    <div class="col">
-                        <h2 class="section-title">Curries & Eggs</h2>
-                        <div class="curries-grid">
-                            <div class="curry-box card-dark-translucent hover-lift">
-                                <span class="eyebrow small" style="color: var(--accent-gold);">NON-VEGETARIAN</span>
-                                <ul class="clean-list mt-16 spacing-large">
-                                    <li><span style="color:white; font-size: 16px;">Chicken Curry</span></li>
-                                    <li><span style="color:white; font-size: 16px;">Chicken Fry</span></li>
-                                    <li><span style="color:white; font-size: 16px;">Egg Curry</span></li>
-                                </ul>
-                            </div>
-                            <div class="curry-box card-dark-translucent hover-lift">
-                                <span class="eyebrow small" style="color: var(--accent-gold);">EGG SPECIALS</span>
-                                <ul class="clean-list mt-16 spacing-large">
-                                    <li><span style="color:white; font-size: 16px;">Omelette</span></li>
-                                    <li><span style="color:white; font-size: 16px;">Double Omelette</span></li>
-                                    <li><span style="color:white; font-size: 16px;">Egg Bhurji</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Location Section -->
     <section id="location" class="menu-section mt-32">
@@ -408,7 +306,20 @@
 
         // Apply Premium UI Modifiers
         document.querySelectorAll('.card-white, .card-warm, .card-dark-translucent, .curry-box, .combo-box').forEach(el => el.classList.add('hover-lift'));
-        document.querySelectorAll('.section-title, .subsection-title, .hero-content, .card-white, .card-warm, .card-dark-translucent, .special-item, .biryani-items').forEach(el => el.classList.add('reveal'));
+
+        // Advanced UX Story Flow (Stagger & Directional reveals)
+        document.querySelector('.tiffins-left')?.classList.add('reveal-left');
+        document.querySelector('.tiffins-right')?.classList.add('reveal-right');
+        document.querySelector('.hero-content')?.classList.add('reveal-left');
+        document.querySelector('.hero-image')?.classList.add('reveal-right');
+        
+        document.querySelectorAll('.special-item').forEach((el, index) => {
+            el.classList.add('reveal-scale');
+            el.style.transitionDelay = `${index * 0.15}s`;
+            el.classList.remove('reveal');
+        });
+
+        document.querySelectorAll('.section-title, .subsection-title').forEach(el => el.classList.add('reveal'));
 
         const revealObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -419,7 +330,7 @@
             });
         }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
 
-        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+        document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale').forEach(el => revealObserver.observe(el));
 
         // Back to top visibility logic
         const backToTopBtn = document.getElementById('back-to-top');
