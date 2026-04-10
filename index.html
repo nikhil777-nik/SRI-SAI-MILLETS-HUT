@@ -149,153 +149,144 @@
     <!-- Menu Navigation -->
     <div class="menu-tabs-wrapper" id="menu">
         <div class="menu-tabs">
-            <button class="tab active" onclick="scrollToSection(event, 'tiffins')">TIFFINS</button>
-            <button class="tab" onclick="scrollToSection(event, 'evening-specials')">EVENING SPECIALS</button>
-
+            <button class="tab active" onclick="scrollToSection(event, 'idli-snacks')">IDLI & SNACKS</button>
+            <button class="tab" onclick="scrollToSection(event, 'dosas-pesarattus')">DOSAS & PESARATTUS</button>
+            <button class="tab" onclick="scrollToSection(event, 'specials-addons')">SPECIALS</button>
         </div>
     </div>
 
-    <!-- Morning Tiffins Section -->
-    <section id="tiffins" class="dark-theme-section">
+    <!-- Idli & Snacks Section -->
+    <section id="idli-snacks" class="menu-section" style="margin-top: 40px;">
+        <h2 class="section-title text-center reveal hover-lift">Breakfast & Snacks</h2>
+        <div class="tiffins-grid">
+            <div class="card-white reveal hover-lift">
+                <h3 class="subsection-title" style="color: var(--accent-gold);">🥣 Idli Varieties</h3>
+                <ul class="clean-list" style="display: flex; flex-direction: column; gap: 12px;">
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Ragi Idli (2 pcs)</span><strong style="color:var(--accent-gold);">30/-</strong></li>
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Ragi Idli (3 pcs)</span><strong style="color:var(--accent-gold);">40/-</strong></li>
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Ragi Idli (4 pcs)</span><strong style="color:var(--accent-gold);">50/-</strong></li>
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Ragi Idli (2 pcs) + Onion Bonda</span><strong style="color:var(--accent-gold);">50/-</strong></li>
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Ragi Idli + Mysore Bonda</span><strong style="color:var(--accent-gold);">50/-</strong></li>
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Ragi Idli + Sprouts Wada</span><strong style="color:var(--accent-gold);">60/-</strong></li>
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Ragi Idli + Wada</span><strong style="color:var(--accent-gold);">60/-</strong></li>
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Ghee Karam Idli (2 pcs)</span><strong style="color:var(--accent-gold);">50/-</strong></li>
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Ghee Karam Idli (3 pcs)</span><strong style="color:var(--accent-gold);">70/-</strong></li>
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Ghee Karam Idli (4 pcs)</span><strong style="color:var(--accent-gold);">90/-</strong></li>
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Sambar Idli (2 pcs)</span><strong style="color:var(--accent-gold);">50/-</strong></li>
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Sambar Idli (3 pcs)</span><strong style="color:var(--accent-gold);">60/-</strong></li>
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Sambar Idli (2 pcs) + Wada</span><strong style="color:var(--accent-gold);">70/-</strong></li>
+                </ul>
+            </div>
+            
+            <div class="card-warm reveal hover-lift">
+                <h3 class="subsection-title" style="color: var(--accent-gold);">🍽️ Snacks & Tiffins</h3>
+                <ul class="clean-list" style="display: flex; flex-direction: column; gap: 12px;">
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Onion Bonda</span><strong style="color:var(--accent-gold);">50/-</strong></li>
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Mysore Bonda</span><strong style="color:var(--accent-gold);">50/-</strong></li>
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Upma</span><strong style="color:var(--accent-gold);">50/-</strong></li>
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Wada</span><strong style="color:var(--accent-gold);">60/-</strong></li>
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Sprouts Wada</span><strong style="color:var(--accent-gold);">60/-</strong></li>
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Wheat Upma</span><strong style="color:var(--accent-gold);">60/-</strong></li>
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Uggani Bajji</span><strong style="color:var(--accent-gold);">70/-</strong></li>
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Millet Upma (Pongal)</span><strong style="color:var(--accent-gold);">80/-</strong></li>
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Ghee Millet Upma (Pongal)</span><strong style="color:var(--accent-gold);">110/-</strong></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dosas & Pesarattus Section -->
+    <section id="dosas-pesarattus" class="dark-theme-section">
         <div class="dark-theme-overlay">
             <div class="dark-theme-content">
-                <h2 class="section-title">Morning Tiffins</h2>
-                <div class="tiffins-grid">
-                    <div class="tiffins-left">
-                        <h3 class="subsection-title">The Idly Gallery</h3>
+                <span class="eyebrow gold reveal">TRADITIONAL FAVORITES</span>
+                <h2 class="section-title white-text reveal">Dosas & Pesarattus</h2>
+                
+                <div class="dosas-columns mt-32">
+                    <div class="card-dark-translucent reveal hover-lift">
+                        <h3 class="subsection-title" style="color: var(--accent-gold);">🥞 Ragi & Millet Dosas</h3>
+                        <ul class="clean-list">
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Plain Ragi Dosa</span><strong style="color:var(--accent-gold);">50/-</strong></li>
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Masala Ragi Dosa</span><strong style="color:var(--accent-gold);">60/-</strong></li>
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Onion Ragi Dosa</span><strong style="color:var(--accent-gold);">60/-</strong></li>
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Ghee Ragi Dosa</span><strong style="color:var(--accent-gold);">70/-</strong></li>
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Wheat Upma Dosa</span><strong style="color:var(--accent-gold);">70/-</strong></li>
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Millet Upma (Pongal) Dosa</span><strong style="color:var(--accent-gold);">70/-</strong></li>
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Erra Karam Onion Dosa</span><strong style="color:var(--accent-gold);">80/-</strong></li>
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Ragi Egg Dosa</span><strong style="color:var(--accent-gold);">70/-</strong></li>
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Ragi Double Egg Dosa</span><strong style="color:var(--accent-gold);">80/-</strong></li>
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Egg Pesarattu Dosa</span><strong style="color:var(--accent-gold);">70/-</strong></li>
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Double Egg Pesarattu Dosa</span><strong style="color:var(--accent-gold);">80/-</strong></li>
+                        </ul>
 
-                        <div class="menu-item-row reveal hover-lift">
-                            <div>
-                                <span>Idly 2</span>
-                                <span class="tag tag-classic" style="margin-left: 8px;">Classic</span>
-                            </div>
-                            <strong style="color: var(--accent-gold);">50/-</strong>
-                        </div>
-                        <div class="menu-item-row reveal hover-lift">
-                            <span>Idly 3</span>
-                            <strong style="color: var(--accent-gold);">75/-</strong>
-                        </div>
-                        <div class="menu-item-row reveal hover-lift">
-                            <div>
-                                <span>Ghee Idly 2</span>
-                                <span class="tag tag-heritage" style="margin-left: 8px;">Heritage</span>
-                            </div>
-                            <strong style="color: var(--accent-gold);">70/-</strong>
-                        </div>
-                        
-                        <div class="info-box border-left-accent mt-32 reveal hover-lift">
-                            <h4 class="box-title">Nutritional Focus</h4>
-                            <div class="menu-item-row no-border">
-                                <span class="muted-text">Millets Upma (Pongal)</span>
-                                <strong style="color: var(--accent-gold);">60/-</strong>
-                            </div>
-                            <div class="menu-item-row no-border">
-                                <span class="muted-text">Ghee Millets Upma (Pongal)</span>
-                                <strong style="color: var(--accent-gold);">80/-</strong>
-                            </div>
-                            <div class="menu-item-row no-border mt-16">
-                                <div>
-                                    <span>Ragi Jawa</span>
-                                    <span class="tag tag-signature" style="margin-left: 8px;">SIGNATURE</span>
-                                </div>
-                                <strong style="color: var(--accent-gold);">25/-</strong>
-                            </div>
-                        </div>
+                        <h3 class="subsection-title mt-24" style="color: var(--accent-gold);">🌿 Pesarattu Varieties</h3>
+                        <ul class="clean-list">
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Plain Pesarattu</span><strong style="color:var(--accent-gold);">60/-</strong></li>
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Masala Pesarattu</span><strong style="color:var(--accent-gold);">70/-</strong></li>
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Upma Pesarattu</span><strong style="color:var(--accent-gold);">70/-</strong></li>
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Onion Pesarattu</span><strong style="color:var(--accent-gold);">80/-</strong></li>
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Wheat Upma Pesarattu</span><strong style="color:var(--accent-gold);">80/-</strong></li>
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Millets Upma (Pongal) Pesarattu</span><strong style="color:var(--accent-gold);">80/-</strong></li>
+                        </ul>
                     </div>
                     
-                    <div class="tiffins-right card-dark-translucent reveal hover-lift">
-                        <div class="right-header">
-                            <h3 class="subsection-title mb-0">Millet Dosas & Pesarattus</h3>
-                            <span class="tag tag-badge">Dosas are served with traditional Peanut chutney</span>
-                        </div>
-                        <div class="dosas-columns">
-                            <ul class="clean-list">
-                                <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Plain Dosa</span><strong style="color:var(--accent-gold);">40/-</strong></li>
-                                <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Masala Dosa</span><strong style="color:var(--accent-gold);">50/-</strong></li>
-                                <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Onion Dosa</span><strong style="color:var(--accent-gold);">60/-</strong></li>
-                                <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Karam Dosa</span><strong style="color:var(--accent-gold);">50/-</strong></li>
-                                <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Sprouts Dosa</span><strong style="color:var(--accent-gold);">50/-</strong></li>
-                                <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Upma Dosa</span><strong style="color:var(--accent-gold);">50/-</strong></li>
-                                <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Egg Dosa</span><strong style="color:var(--accent-gold);">60/-</strong></li>
-                                <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Double Egg Dosa</span><strong style="color:var(--accent-gold);">70/-</strong></li>
-                                <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Ghee Plain Dosa</span><strong style="color:var(--accent-gold);">60/-</strong></li>
-                                <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Ghee Masala Dosa</span><strong style="color:var(--accent-gold);">70/-</strong></li>
-                                <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Ghee Karam Dosa</span><strong style="color:var(--accent-gold);">70/-</strong></li>
-                                <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Ghee Onion Dosa</span><strong style="color:var(--accent-gold);">80/-</strong></li>
-                                <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Ghee Sprouts Dosa</span><strong style="color:var(--accent-gold);">70/-</strong></li>
-                                <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Ghee Upma Dosa</span><strong style="color:var(--accent-gold);">70/-</strong></li>
-                                <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Paneer Dosa</span><strong style="color:var(--accent-gold);">80/-</strong></li>
-                                <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter Paneer Dosa</span><strong style="color:var(--accent-gold);">90/-</strong></li>
-                            </ul>
-                            <ul class="clean-list">
-                                <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Plain Pesarattu</span><strong style="color:var(--accent-gold);">50/-</strong></li>
-                                <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Onion Pesarattu</span><strong style="color:var(--accent-gold);">70/-</strong></li>
-                                <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Masala Pesarattu</span><strong style="color:var(--accent-gold);">60/-</strong></li>
-                                <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Upma Pesarattu</span><strong style="color:var(--accent-gold);">60/-</strong></li>
-                                <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Egg Pesarattu</span><strong style="color:var(--accent-gold);">60/-</strong></li>
-                                <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Double Egg Pesarattu</span><strong style="color:var(--accent-gold);">70/-</strong></li>
-                                <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter Masala Pesarattu</span><strong style="color:var(--accent-gold);">70/-</strong></li>
-                                <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter Onion Pesarattu</span><strong style="color:var(--accent-gold);">80/-</strong></li>
-                                <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter Upma Pesarattu</span><strong style="color:var(--accent-gold);">70/-</strong></li>
-                                <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter Paneer Pesarattu</span><strong style="color:var(--accent-gold);">90/-</strong></li>
-                                <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Ghee Plain Pesarattu</span><strong style="color:var(--accent-gold);">70/-</strong></li>
-                                <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Ghee Upma Pesarattu</span><strong style="color:var(--accent-gold);">80/-</strong></li>
-                                <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Ghee Masala Pesarattu</span><strong style="color:var(--accent-gold);">80/-</strong></li>
-                                <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Ghee Onion Pesarattu</span><strong style="color:var(--accent-gold);">80/-</strong></li>
-                            </ul>
-                        </div>
+                    <div class="card-dark-translucent reveal hover-lift" style="transition-delay: 0.1s;">
+                        <h3 class="subsection-title" style="color: var(--accent-gold);">🧈 Butter / Ghee Specials</h3>
+                        <ul class="clean-list">
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter/Ghee Plain Dosa</span><strong style="color:var(--accent-gold);">70/-</strong></li>
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter/Ghee Masala Dosa</span><strong style="color:var(--accent-gold);">80/-</strong></li>
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter/Ghee Upma Dosa</span><strong style="color:var(--accent-gold);">80/-</strong></li>
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter/Ghee Karam Dosa</span><strong style="color:var(--accent-gold);">80/-</strong></li>
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter/Ghee Onion Dosa</span><strong style="color:var(--accent-gold);">90/-</strong></li>
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter/Ghee Wheat Upma Dosa</span><strong style="color:var(--accent-gold);">90/-</strong></li>
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter/Ghee Millet Upma (Pongal) Dosa</span><strong style="color:var(--accent-gold);">90/-</strong></li>
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter/Ghee Erra Karam Mirchi Onion Dosa</span><strong style="color:var(--accent-gold);">90/-</strong></li>
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter/Ghee Plain Pesarattu</span><strong style="color:var(--accent-gold);">80/-</strong></li>
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter/Ghee Masala Pesarattu</span><strong style="color:var(--accent-gold);">90/-</strong></li>
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter/Ghee Upma Pesarattu</span><strong style="color:var(--accent-gold);">90/-</strong></li>
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter/Ghee Onion Pesarattu</span><strong style="color:var(--accent-gold);">100/-</strong></li>
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter/Ghee Wheat Upma Pesarattu</span><strong style="color:var(--accent-gold);">100/-</strong></li>
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter/Ghee Millets Upma (Pongal) Pesarattu</span><strong style="color:var(--accent-gold);">100/-</strong></li>
+                        </ul>
+                        
+                        <h3 class="subsection-title mt-24" style="color: var(--accent-gold);">🧀 Premium Dosas</h3>
+                        <ul class="clean-list">
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter Paneer Dosa</span><strong style="color:var(--accent-gold);">120/-</strong></li>
+                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter Palak Paneer Dosa</span><strong style="color:var(--accent-gold);">130/-</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Evening Specials Section -->
-    <section id="evening-specials" class="dark-theme-section">
-        <div class="dark-theme-overlay">
-            <div class="dark-theme-content">
-                <span class="eyebrow gold reveal">THE SUNSET SELECTION</span>
-                <h2 class="section-title white-text reveal">Evening Specials</h2>
-                
-                <div class="special-items">
-                    <div class="special-item reveal hover-lift">
-                        <div class="special-text" style="width: 100%;">
-                            <div style="display:flex; justify-content:space-between; align-items:center;">
-                                <h3>Chicken Dosa</h3>
-                                <h3 style="color:var(--accent-gold); margin:0;">120/-</h3>
-                            </div>
-                            <p>Spice-minced chicken folded into a crisp millet base</p>
-                        </div>
-                        <div class="special-icon">🍗</div>
-                    </div>
-                    <div class="special-item reveal hover-lift">
-                        <div class="special-text" style="width: 100%;">
-                            <div style="display:flex; justify-content:space-between; align-items:center;">
-                                <h3>Chicken Kheema Dosa</h3>
-                                <h3 style="color:var(--accent-gold); margin:0;">120/-</h3>
-                            </div>
-                            <p>Rich slow-cooked chicken keema with heritage spices</p>
-                        </div>
-                        <div class="special-icon">🥘</div>
-                    </div>
-                    <div class="special-item reveal hover-lift">
-                        <div class="special-text" style="width: 100%;">
-                            <div style="display:flex; justify-content:space-between; align-items:center;">
-                                <h3>Butter Palak Paneer Dosa</h3>
-                                <h3 style="color:var(--accent-gold); margin:0;">110/-</h3>
-                            </div>
-                            <p>Creamy spinach and paneer medley on a golden brown</p>
-                        </div>
-                        <div class="special-icon">✨</div>
-                    </div>
-                </div>
+    <!-- Specials & Add-ons -->
+    <section id="specials-addons" class="menu-section mt-32 mb-32">
+        <h2 class="section-title text-center reveal hover-lift">Evening & Specials</h2>
+        <div class="tiffins-grid">
+            <div class="card-white reveal hover-lift">
+                <h3 class="subsection-title" style="color: var(--accent-gold);">🌆 Evening Specials</h3>
+                <ul class="clean-list" style="display: flex; flex-direction: column; gap: 12px;">
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Mysore Bonda</span><strong style="color:var(--accent-gold);">50/-</strong></li>
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Sprouts Wada</span><strong style="color:var(--accent-gold);">60/-</strong></li>
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Millets Punugulu</span><strong style="color:var(--accent-gold);">60/-</strong></li>
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Millets Mirchi</span><strong style="color:var(--accent-gold);">60/-</strong></li>
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Madhur Wada</span><strong style="color:var(--accent-gold);">60/-</strong></li>
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Uggani Bajji</span><strong style="color:var(--accent-gold);">70/-</strong></li>
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Chicken Dosa</span><strong style="color:var(--accent-gold);">130/-</strong></li>
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Chicken Idli</span><strong style="color:var(--accent-gold);">130/-</strong></li>
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Chicken Keema Dosa</span><strong style="color:var(--accent-gold);">140/-</strong></li>
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Chicken Wada</span><strong style="color:var(--accent-gold);">150/-</strong></li>
+                </ul>
+            </div>
+            <div class="card-warm reveal hover-lift">
+                <h3 class="subsection-title" style="color: var(--accent-gold);">📦 Additional Charges</h3>
+                <ul class="clean-list" style="display: flex; flex-direction: column; gap: 12px;">
+                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Parcel Charges</span><strong style="color:var(--accent-gold);">10/- extra</strong></li>
+                </ul>
             </div>
         </div>
-    </section>
-
-
-
-    <!-- Location Section -->
+    </section>    <!-- Location Section -->
     <section id="location" class="menu-section mt-32">
         <div class="section-header-line">
             <h2 class="section-title">Location</h2>
