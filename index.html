@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sri Sai Millets Hut — Experience the renaissance of ancient grains. Traditional millet-based breakfast, dosas, pesarattus, and evening specials in Hyderabad.">
     <title>Sri Sai Millets Hut</title>
     <link rel="icon" href="data:,">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Splash Screen -->
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SPLASH SCREEN
+    ═══════════════════════════════════════════════════════════ -->
     <div id="splash-screen">
         <div class="wrapper">
-
             <svg viewBox="0 -250 680 750" xmlns="http://www.w3.org/2000/svg">
                 <title>Sri Sai Millets Hut Logo</title>
                 <desc>Animated step-by-step logo build</desc>
@@ -83,8 +86,8 @@
                 <!-- Step 6: Name text -->
                 <g id="s6" style="opacity:0; transition:opacity 0.2s;">
                     <text x="340" y="-180" text-anchor="middle" font-family="Georgia,serif" font-size="24" font-weight="700" fill="#C88A2A" letter-spacing="5">SRI SAI</text>
-                    <line x1="172" y1="-165" x2="278" y="-165" stroke="#C88A2A" stroke-width="1.5"/>
-                    <line x1="402" y1="-165" x2="508" y="-165" stroke="#C88A2A" stroke-width="1.5"/>
+                    <line x1="172" y1="-165" x2="278" y2="-165" stroke="#C88A2A" stroke-width="1.5"/>
+                    <line x1="402" y1="-165" x2="508" y2="-165" stroke="#C88A2A" stroke-width="1.5"/>
                     <text x="340" y="-110" text-anchor="middle" font-family="Georgia,serif" font-size="52" font-weight="700" fill="#3B2A10" letter-spacing="4">MILLETS</text>
                     <text x="340" y="-60" text-anchor="middle" font-family="Georgia,serif" font-size="32" font-weight="700" fill="#4A7C3F" letter-spacing="12">HUT</text>
                 </g>
@@ -102,23 +105,28 @@
     <script>
         document.body.style.overflow = 'hidden'; // Prevent scroll during splash
     </script>
-    <!-- Navigation -->
+
+    <!-- ═══════════════════════════════════════════════════════════
+         NAVIGATION BAR
+    ═══════════════════════════════════════════════════════════ -->
     <nav class="navbar">
         <a href="#home" class="logo">
             <img src="assets/logo.svg" alt="Sri Sai Millets Hut Logo" class="brand-logo">
             <span class="brand-text">SRI SAI MILLETS HUT</span>
         </a>
         <ul class="nav-links">
-            <li><a href="#home" class="active" id="nav-home">Home</a></li>
-            <li><a href="#about" id="nav-about">About</a></li>
-            <li><a href="#menu" id="nav-menu">Menu</a></li>
-            <li><a href="our-story.html" id="nav-story">Our Story</a></li>
+            <li><a href="#home"     class="active" id="nav-home">Home</a></li>
+            <li><a href="#about"    id="nav-about">About</a></li>
+            <li><a href="#menu"     id="nav-menu">Menu</a></li>
+            <li><a href="pages/our-story.html" id="nav-story">Our Story</a></li>
             <li><a href="#location" id="nav-location">Location</a></li>
         </ul>
     </nav>
 
+    <!-- ═══════════════════════════════════════════════════════════
+         HERO SECTION
+    ═══════════════════════════════════════════════════════════ -->
     <div id="home"></div>
-    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <span class="eyebrow">A LEGACY OF HEALTH</span>
@@ -129,11 +137,13 @@
             </div>
         </div>
         <div class="hero-image">
-            <img src="assets/hero_dosa.png" alt="Millet Dosa Thali" fetchpriority="high" decoding="async">
+            <img src="assets/images/hero_dosa.png" alt="Millet Dosa Thali" fetchpriority="high" decoding="async">
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- ═══════════════════════════════════════════════════════════
+         ABOUT SECTION
+    ═══════════════════════════════════════════════════════════ -->
     <section id="about" class="about-teaser-container reveal">
         <span class="eyebrow hover-lift">KNOW YOUR GRAIN</span>
         <h2 class="section-title hover-lift">The Millet Spotlight</h2>
@@ -141,27 +151,31 @@
             Ancient wisdom meets modern nutritional science. Every grain we serve has a story and a specific benefit for your body. Discover the secrets of Ragi, Jowar, Bajra, and Foxtail in our interactive spotlight.
         </p>
         <div class="about-cta-group">
-            <a href="millet-spotlight.html" class="btn-primary">Explore Spotlight</a>
-            <a href="our-story.html" class="btn-primary btn-warm">Our Full Story</a>
+            <a href="pages/millet-spotlight.html" class="btn-primary">Explore Spotlight</a>
+            <a href="pages/our-story.html" class="btn-primary btn-warm">Our Full Story</a>
         </div>
     </section>
 
-    <!-- Menu Navigation -->
+    <!-- ═══════════════════════════════════════════════════════════
+         MENU TABS (Internal Navigation)
+    ═══════════════════════════════════════════════════════════ -->
     <div class="menu-tabs-wrapper" id="menu">
         <div class="menu-tabs">
-            <button class="tab active" onclick="scrollToSection(event, 'idli-snacks')">IDLI & SNACKS</button>
-            <button class="tab" onclick="scrollToSection(event, 'dosas-pesarattus')">DOSAS & PESARATTUS</button>
+            <button class="tab active" onclick="scrollToSection(event, 'idli-snacks')">IDLI &amp; SNACKS</button>
+            <button class="tab" onclick="scrollToSection(event, 'dosas-pesarattus')">DOSAS &amp; PESARATTUS</button>
             <button class="tab" onclick="scrollToSection(event, 'specials-addons')">SPECIALS</button>
         </div>
     </div>
 
-    <!-- Idli & Snacks Section -->
+    <!-- ═══════════════════════════════════════════════════════════
+         MENU SECTION A — IDLI & SNACKS
+    ═══════════════════════════════════════════════════════════ -->
     <section id="idli-snacks" class="dark-theme-section">
         <div class="dark-theme-overlay">
             <div class="dark-theme-content">
                 <span class="eyebrow gold reveal text-center" style="display:block;">MORNING ESSENTIALS</span>
-                <h2 class="section-title white-text text-center reveal hover-lift">Breakfast & Snacks</h2>
-                
+                <h2 class="section-title white-text text-center reveal hover-lift">Breakfast &amp; Snacks</h2>
+
                 <div class="tiffins-grid mt-32">
                     <div class="card-dark-translucent reveal hover-lift">
                         <h3 class="subsection-title" style="color: var(--accent-gold);">🥣 Idli Varieties</h3>
@@ -181,9 +195,9 @@
                             <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px;"><span>Sambar Idli (2 pcs) + Wada</span><strong style="color:var(--accent-gold);">70/-</strong></li>
                         </ul>
                     </div>
-                    
+
                     <div class="card-dark-translucent reveal hover-lift" style="transition-delay: 0.1s;">
-                        <h3 class="subsection-title" style="color: var(--accent-gold);">🍽️ Snacks & Tiffins</h3>
+                        <h3 class="subsection-title" style="color: var(--accent-gold);">🍽️ Snacks &amp; Tiffins</h3>
                         <ul class="clean-list" style="display: flex; flex-direction: column; gap: 12px;">
                             <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px;"><span>Onion Bonda</span><strong style="color:var(--accent-gold);">50/-</strong></li>
                             <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px;"><span>Mysore Bonda</span><strong style="color:var(--accent-gold);">50/-</strong></li>
@@ -201,16 +215,18 @@
         </div>
     </section>
 
-    <!-- Dosas & Pesarattus Section -->
+    <!-- ═══════════════════════════════════════════════════════════
+         MENU SECTION B — DOSAS & PESARATTUS
+    ═══════════════════════════════════════════════════════════ -->
     <section id="dosas-pesarattus" class="dark-theme-section">
         <div class="dark-theme-overlay">
             <div class="dark-theme-content">
                 <span class="eyebrow gold reveal">TRADITIONAL FAVORITES</span>
-                <h2 class="section-title white-text reveal">Dosas & Pesarattus</h2>
-                
+                <h2 class="section-title white-text reveal">Dosas &amp; Pesarattus</h2>
+
                 <div class="dosas-columns mt-32">
                     <div class="card-dark-translucent reveal hover-lift">
-                        <h3 class="subsection-title" style="color: var(--accent-gold);">🥞 Ragi & Millet Dosas</h3>
+                        <h3 class="subsection-title" style="color: var(--accent-gold);">🥞 Ragi &amp; Millet Dosas</h3>
                         <ul class="clean-list">
                             <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Plain Ragi Dosa</span><strong style="color:var(--accent-gold);">50/-</strong></li>
                             <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Masala Ragi Dosa</span><strong style="color:var(--accent-gold);">60/-</strong></li>
@@ -235,7 +251,7 @@
                             <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Millets Upma (Pongal) Pesarattu</span><strong style="color:var(--accent-gold);">80/-</strong></li>
                         </ul>
                     </div>
-                    
+
                     <div class="card-dark-translucent reveal hover-lift" style="transition-delay: 0.1s;">
                         <h3 class="subsection-title" style="color: var(--accent-gold);">🧈 Butter / Ghee Specials</h3>
                         <ul class="clean-list">
@@ -254,7 +270,7 @@
                             <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter/Ghee Wheat Upma Pesarattu</span><strong style="color:var(--accent-gold);">100/-</strong></li>
                             <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter/Ghee Millets Upma (Pongal) Pesarattu</span><strong style="color:var(--accent-gold);">100/-</strong></li>
                         </ul>
-                        
+
                         <h3 class="subsection-title mt-24" style="color: var(--accent-gold);">🧀 Premium Dosas</h3>
                         <ul class="clean-list">
                             <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter Paneer Dosa</span><strong style="color:var(--accent-gold);">120/-</strong></li>
@@ -266,13 +282,15 @@
         </div>
     </section>
 
-    <!-- Specials & Add-ons -->
+    <!-- ═══════════════════════════════════════════════════════════
+         MENU SECTION C — SPECIALS & ADD-ONS
+    ═══════════════════════════════════════════════════════════ -->
     <section id="specials-addons" class="dark-theme-section">
         <div class="dark-theme-overlay">
             <div class="dark-theme-content">
                 <span class="eyebrow gold reveal text-center" style="display:block;">THE SUNSET SELECTION</span>
-                <h2 class="section-title white-text text-center reveal hover-lift">Evening & Specials</h2>
-                
+                <h2 class="section-title white-text text-center reveal hover-lift">Evening &amp; Specials</h2>
+
                 <div class="tiffins-grid mt-32">
                     <div class="card-dark-translucent reveal hover-lift">
                         <h3 class="subsection-title" style="color: var(--accent-gold);">🌆 Evening Specials</h3>
@@ -298,16 +316,20 @@
                 </div>
             </div>
         </div>
-    </section>    <!-- Location Section -->
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         LOCATION SECTION
+    ═══════════════════════════════════════════════════════════ -->
     <section id="location" class="menu-section mt-32 mb-32">
         <div class="section-header-line">
-            <h2 class="section-title">Location & Contact</h2>
+            <h2 class="section-title">Location &amp; Contact</h2>
             <div class="line"></div>
         </div>
         <div class="location-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
             <div class="location-info reveal" style="text-align: left;">
                 <h3 class="subsection-title" style="color: var(--accent-gold); margin-bottom: 24px;">Visit Our Hut</h3>
-                
+
                 <div class="info-block mb-24">
                     <span class="eyebrow small" style="margin-bottom: 8px; display: block;">ADDRESS</span>
                     <p class="muted-text" style="color: var(--accent-dark); font-weight: 500;">
@@ -325,7 +347,7 @@
                 </div>
 
                 <div class="info-block mb-24">
-                    <span class="eyebrow small" style="margin-bottom: 8px; display: block;">PHONE & ENQUIRIES</span>
+                    <span class="eyebrow small" style="margin-bottom: 8px; display: block;">PHONE &amp; ENQUIRIES</span>
                     <p class="muted-text" style="color: var(--accent-dark); font-weight: 500;">
                         +91 98765 43210<br>
                         contact@srisaimilletshut.com
@@ -341,7 +363,9 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- ═══════════════════════════════════════════════════════════
+         FOOTER
+    ═══════════════════════════════════════════════════════════ -->
     <footer class="footer">
         <div class="footer-grid">
             <div class="footer-left">
@@ -350,13 +374,13 @@
                     <span class="brand-text">SRI SAI MILLETS HUT</span>
                 </a>
                 <p>Dedicated to preserving our culinary heritage through the superfood of our ancestors. Join us in the millet revolution.</p>
-                <small class="copyright">© 2024 SRI SAI MILLETS HUT. CURATING HEALTH & HERITAGE.</small>
+                <small class="copyright">© 2024 SRI SAI MILLETS HUT. CURATING HEALTH &amp; HERITAGE.</small>
             </div>
             <div class="footer-right">
                 <div class="footer-col">
                     <span class="eyebrow small">RESOURCES</span>
                     <ul class="clean-list footer-links">
-                        <li><a href="millet-spotlight.html">Millet Nutrition Guide</a></li>
+                        <li><a href="pages/millet-spotlight.html">Millet Nutrition Guide</a></li>
                         <li><a href="#about">Our Story</a></li>
                         <li><a href="#location">Find Us</a></li>
                     </ul>
@@ -372,10 +396,14 @@
         </div>
     </footer>
 
-    <!-- Back to top button -->
+    <!-- ═══════════════════════════════════════════════════════════
+         FLOATING BUTTONS
+    ═══════════════════════════════════════════════════════════ -->
+
+    <!-- Back to Top -->
     <button id="back-to-top" class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
 
-    <!-- WhatsApp Floating Button -->
+    <!-- WhatsApp -->
     <a href="https://wa.me/919876543210" class="whatsapp-btn" target="_blank" aria-label="Order on WhatsApp">
         <svg viewBox="0 0 24 24" alt="WhatsApp">
             <path fill="white" d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.171.823-.299.045-.691.071-1.111-.065-.25-.082-.569-.196-.983-.372-1.758-.742-2.919-2.535-3.007-2.652-.088-.116-.715-.951-.715-1.827 0-.876.458-1.307.621-1.481.163-.174.356-.217.473-.217.119 0 .238.001.341.006.109.006.255-.041.401.312.146.353.5 1.221.544 1.309.044.088.073.191.014.309-.058.119-.088.191-.176.294-.088.106-.185.236-.264.318-.088.09-.18.188-.076.368.103.18.459.758.986 1.228.679.605 1.251.794 1.433.882.182.088.291.074.397-.05.106-.124.453-.526.574-.707.121-.18.243-.153.408-.094.165.059 1.045.493 1.22.582.176.088.292.133.337.208.044.075.044.437-.1.841z"/>
@@ -383,170 +411,10 @@
         </svg>
     </a>
 
-    <script>
-        function scrollToSection(e, id) {
-            const el = document.getElementById(id);
-            if (el) {
-                // Determine offset for header to look nice and avoid covered content by sticky menu
-                const y = el.getBoundingClientRect().top + window.scrollY - 100;
-                window.scrollTo({top: y, behavior: 'smooth'});
-            }
-            if (e && e.currentTarget) {
-                document.querySelectorAll('.tab').forEach(tab => {
-                    tab.classList.remove('active');
-                });
-                e.currentTarget.classList.add('active');
-            }
-        }
-        
-        // Simple IntersectionObserver to highlight tab on scroll
-        const sections = document.querySelectorAll('section[id]:not(#location):not(#menu)');
-        const tabs = document.querySelectorAll('.tab');
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if(entry.isIntersecting) {
-                    const id = entry.target.getAttribute('id');
-                    tabs.forEach(tab => {
-                        tab.classList.remove('active');
-                        if (tab.getAttribute('onclick')?.includes(id)) {
-                            tab.classList.add('active');
-                        }
-                    });
-                }
-            });
-        }, { threshold: 0.3, rootMargin: "-100px 0px 0px 0px" });
-        
-        sections.forEach(section => observer.observe(section));
+    <!-- ═══════════════════════════════════════════════════════════
+         SCRIPTS
+    ═══════════════════════════════════════════════════════════ -->
+    <script src="js/main.js"></script>
 
-        // Top Navigation scroll logic
-        const navHome = document.getElementById('nav-home');
-        const navAbout = document.getElementById('nav-about');
-        const navMenu = document.getElementById('nav-menu');
-        const navLocation = document.getElementById('nav-location');
-        
-        const aboutSection = document.getElementById('about');
-        const menuSection = document.getElementById('menu');
-        const locationSection = document.getElementById('location');
-
-        window.addEventListener('scroll', () => {
-            if(!navHome || !navAbout || !navMenu || !navLocation) return;
-            
-            // Default remove all
-            navHome.classList.remove('active');
-            navAbout.classList.remove('active');
-            navMenu.classList.remove('active');
-            navLocation.classList.remove('active');
-
-            // Find current section
-            let scrollY = window.scrollY + 200; // offset
-
-            if (locationSection && locationSection.offsetTop <= scrollY) {
-                navLocation.classList.add('active');
-            } else if (menuSection && menuSection.offsetTop <= scrollY) {
-                navMenu.classList.add('active');
-            } else if (aboutSection && aboutSection.offsetTop <= scrollY) {
-                navAbout.classList.add('active');
-            } else {
-                navHome.classList.add('active');
-            }
-        });
-
-        // Add smooth scrolling to nav links
-        document.querySelectorAll('.nav-links a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (!href.startsWith('#')) return; // Let regular links navigate normally
-                
-                const targetId = href.substring(1);
-                const targetEl = document.getElementById(targetId);
-                
-                if (targetEl) {
-                    e.preventDefault();
-                    const y = targetEl.getBoundingClientRect().top + window.scrollY - 80;
-                    window.scrollTo({top: y, behavior: 'smooth'});
-                }
-            });
-        });
-
-        // Apply Premium UI Modifiers
-        document.querySelectorAll('.card-white, .card-warm, .card-dark-translucent, .curry-box, .combo-box').forEach(el => el.classList.add('hover-lift'));
-
-        // Advanced UX Story Flow (Stagger & Directional reveals)
-        document.querySelector('.tiffins-left')?.classList.add('reveal-left');
-        document.querySelector('.tiffins-right')?.classList.add('reveal-right');
-        document.querySelector('.hero-content')?.classList.add('reveal-left');
-        document.querySelector('.hero-image')?.classList.add('reveal-right');
-        
-        document.querySelectorAll('.special-item').forEach((el, index) => {
-            el.classList.add('reveal-scale');
-            el.style.transitionDelay = `${index * 0.15}s`;
-            el.classList.remove('reveal');
-        });
-
-        document.querySelectorAll('.section-title, .subsection-title').forEach(el => el.classList.add('reveal'));
-
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if(entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                    revealObserver.unobserve(entry.target); // Reveal only once
-                }
-            });
-        }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
-
-        document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale').forEach(el => revealObserver.observe(el));
-
-        // Back to top visibility logic
-        const backToTopBtn = document.getElementById('back-to-top');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 400) {
-                backToTopBtn.classList.add('visible');
-            } else {
-                backToTopBtn.classList.remove('visible');
-            }
-        });
-
-        // Splash Screen Logic
-        const splashSteps = [
-            { id: 's1', label: 'Step 1 of 7 — Circle frame' },
-            { id: 's2', label: 'Step 2 of 7 — Roof' },
-            { id: 's3', label: 'Step 3 of 7 — Hut body & door' },
-            { id: 's4', label: 'Step 4 of 7 — Left millet stalk' },
-            { id: 's5', label: 'Step 5 of 7 — Right millet stalk' },
-            { id: 's6', label: 'Step 6 of 7 — Name text' },
-            { id: 's7', label: 'Step 7 of 7 — Tagline (complete!)' }
-        ];
-
-        let splashCurrent = 0;
-
-        function renderSplash() {
-            splashSteps.forEach((s, i) => {
-                const el = document.getElementById(s.id);
-                if (el) el.style.opacity = i <= splashCurrent ? '1' : '0';
-            });
-        }
-
-        renderSplash();
-
-        const splashTimer = setInterval(() => {
-            if (splashCurrent < splashSteps.length - 1) {
-                splashCurrent++;
-                renderSplash();
-            } else {
-                clearInterval(splashTimer);
-                setTimeout(() => {
-                    const splashScreen = document.getElementById('splash-screen');
-                    if (splashScreen) {
-                        splashScreen.classList.add('hidden');
-                        document.body.style.overflow = ''; // Restore scrolling
-                        setTimeout(() => {
-                            splashScreen.remove();
-                        }, 800); // Wait for CSS transition
-                    }
-                }, 400); // Pause on last step before fading
-            }
-        }, 200); // Faster for splash screen
-    </script>
 </body>
 </html>

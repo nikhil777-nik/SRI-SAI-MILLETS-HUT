@@ -2,5 +2,9 @@
   "buildCommand": "",
   "outputDirectory": ".",
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/millet-spotlight", "destination": "/pages/millet-spotlight.html" },
+    { "source": "/our-story",        "destination": "/pages/our-story.html" }
+  ]
 }

@@ -652,8 +652,8 @@ a {
 
 /* Section Backgrounds */
 #specials-addons { background-image: url('https://static.toiimg.com/thumb/82571270.cms?imgsize=443554&width=800&height=800'); }
-#idli-snacks { background-image: url('assets/morning_tiffins_bg.png'); margin-top: 0; }
-#dosas-pesarattus { background-image: url('assets/rotis_curries_bg.png'); }
+#idli-snacks { background-image: url('../assets/images/morning_tiffins_bg.png'); margin-top: 0; }
+#dosas-pesarattus { background-image: url('../assets/images/rotis_curries_bg.png'); }
 
 /* Beautiful UI Enhancements */
 .reveal, .reveal-left, .reveal-right, .reveal-scale {
@@ -745,7 +745,7 @@ a {
     background-color: #B8922C;
 }
 
-#meals-biryani { background-image: url('assets/grand_meals_bg.png'); }
+#meals-biryani { background-image: url('../assets/images/grand_meals_bg.png'); }
 
 
 /* Responsive Design */
