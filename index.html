@@ -112,7 +112,7 @@
             <li><a href="#home" class="active" id="nav-home">Home</a></li>
             <li><a href="#about" id="nav-about">About</a></li>
             <li><a href="#menu" id="nav-menu">Menu</a></li>
-            <li><a href="our-story.html" id="nav-story">Our Story</a></li>
+            <li><a href="our-story" id="nav-story">Our Story</a></li>
             <li><a href="#location" id="nav-location">Location</a></li>
         </ul>
     </nav>
@@ -124,6 +124,9 @@
             <span class="eyebrow">A LEGACY OF HEALTH</span>
             <h1>Our Imperial<br><em>Millet Selection</em></h1>
             <p>Experience the renaissance of ancient grains. Curated with traditional Nawabi spices and modern nutritional science.</p>
+            <div class="reveal mt-32">
+                <a href="#menu" class="btn-primary" style="display:inline-block; padding: 14px 40px; font-size: 14px; text-transform: uppercase; letter-spacing: 1px;">View Our Menu</a>
+            </div>
         </div>
         <div class="hero-image">
             <img src="assets/hero_dosa.png" alt="Millet Dosa Thali" fetchpriority="high" decoding="async">
@@ -132,17 +135,14 @@
 
     <!-- About Section -->
     <section id="about" class="menu-section mt-32" style="text-align: center; max-width: 800px;">
-        <span class="eyebrow reveal hover-lift">THE MILLET REVOLUTION</span>
-        <h2 class="section-title reveal hover-lift">Reviving Ancestral Wellness</h2>
+        <span class="eyebrow reveal hover-lift">KNOW YOUR GRAIN</span>
+        <h2 class="section-title reveal hover-lift">The Millet Spotlight</h2>
         <p class="muted-text mb-24 reveal hover-lift" style="font-size: 16px; line-height: 1.8;">
-            At Sri Sai Millets Hut, we believe that true health begins with what we put on our plates. 
-            We have dedicated ourselves to reviving the lost glory of millets—ancient grains that naturally 
-            nourish the body and sustain the earth. Our culinary experts skillfully blend traditional 
-            Nawabi spices with these potent superfoods, delivering a taste that respects history while 
-            empowering your modern lifestyle.
+            Ancient wisdom meets modern nutritional science. Every grain we serve has a story and a specific benefit for your body. Discover the secrets of Ragi, Jowar, Bajra, and Foxtail in our interactive spotlight.
         </p>
-        <div class="reveal hover-lift" style="margin-top: 32px;">
-            <a href="our-story.html" class="btn-primary" style="display:inline-block; padding: 12px 32px; font-size: 13px;">Read Our Full Story</a>
+        <div class="reveal hover-lift" style="margin-top: 32px; display: flex; gap: 16px; justify-content: center;">
+            <a href="millet-spotlight" class="btn-primary" style="display:inline-block; padding: 12px 32px; font-size: 13px;">Explore Spotlight</a>
+            <a href="our-story" class="btn-primary" style="display:inline-block; padding: 12px 32px; font-size: 13px; background: var(--card-warm); color: var(--accent-dark); border: none;">Our Full Story</a>
         </div>
     </section>
 
@@ -299,16 +299,44 @@
             </div>
         </div>
     </section>    <!-- Location Section -->
-    <section id="location" class="menu-section mt-32">
+    <section id="location" class="menu-section mt-32 mb-32">
         <div class="section-header-line">
-            <h2 class="section-title">Location</h2>
+            <h2 class="section-title">Location & Contact</h2>
             <div class="line"></div>
         </div>
-        <div class="location-container" style="text-align: center;">
-            <p class="muted-text mb-24">Visit us and experience the legacy of health.</p>
-            <a href="https://share.google/EGla2NW96xy7uU0i9" target="_blank" class="btn-primary" style="display:inline-block; margin-bottom: 24px; padding: 12px 24px; font-size: 13px;">View on Google Maps</a>
-            <div style="border-radius: var(--radius-lg); overflow: hidden; width: 100%; height: 350px; background-color: var(--card-warm); display: flex; align-items: center; justify-content: center;">
-                <iframe src="https://maps.google.com/maps?q=SRI%20SAI%20MILLET%20HUT&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="location-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+            <div class="location-info reveal" style="text-align: left;">
+                <h3 class="subsection-title" style="color: var(--accent-gold); margin-bottom: 24px;">Visit Our Hut</h3>
+                
+                <div class="info-block mb-24">
+                    <span class="eyebrow small" style="margin-bottom: 8px; display: block;">ADDRESS</span>
+                    <p class="muted-text" style="color: var(--accent-dark); font-weight: 500;">
+                        123, Heritage Square, Near Tech Park<br>
+                        Madhapur, Hyderabad, Telangana 500081
+                    </p>
+                </div>
+
+                <div class="info-block mb-24">
+                    <span class="eyebrow small" style="margin-bottom: 8px; display: block;">OPERATING HOURS</span>
+                    <p class="muted-text" style="color: var(--accent-dark); font-weight: 500;">
+                        Mon - Sat: 7:00 AM - 10:00 PM<br>
+                        Sunday: 7:30 AM - 12:00 PM
+                    </p>
+                </div>
+
+                <div class="info-block mb-24">
+                    <span class="eyebrow small" style="margin-bottom: 8px; display: block;">PHONE & ENQUIRIES</span>
+                    <p class="muted-text" style="color: var(--accent-dark); font-weight: 500;">
+                        +91 98765 43210<br>
+                        contact@srisaimilletshut.com
+                    </p>
+                </div>
+
+                <a href="https://share.google/EGla2NW96xy7uU0i9" target="_blank" class="btn-primary" style="display:inline-block; padding: 12px 24px; font-size: 13px;">Get Direction</a>
+            </div>
+
+            <div class="location-map reveal" style="border-radius: var(--radius-lg); overflow: hidden; height: 400px; box-shadow: var(--shadow-lg);">
+                <iframe src="https://maps.google.com/maps?q=SRI%20SAI%20MILLET%20HUT&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
@@ -328,9 +356,9 @@
                 <div class="footer-col">
                     <span class="eyebrow small">RESOURCES</span>
                     <ul class="clean-list footer-links">
-                        <li><a href="#">Nutrition Guide</a></li>
-                        <li><a href="#">Sustainability</a></li>
-                        <li><a href="#">Our Farmers</a></li>
+                        <li><a href="millet-spotlight">Millet Nutrition Guide</a></li>
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="#location">Find Us</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -346,6 +374,14 @@
 
     <!-- Back to top button -->
     <button id="back-to-top" class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919876543210" class="whatsapp-btn" target="_blank" aria-label="Order on WhatsApp">
+        <svg viewBox="0 0 24 24" alt="WhatsApp">
+            <path fill="white" d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.171.823-.299.045-.691.071-1.111-.065-.25-.082-.569-.196-.983-.372-1.758-.742-2.919-2.535-3.007-2.652-.088-.116-.715-.951-.715-1.827 0-.876.458-1.307.621-1.481.163-.174.356-.217.473-.217.119 0 .238.001.341.006.109.006.255-.041.401.312.146.353.5 1.221.544 1.309.044.088.073.191.014.309-.058.119-.088.191-.176.294-.088.106-.185.236-.264.318-.088.09-.18.188-.076.368.103.18.459.758.986 1.228.679.605 1.251.794 1.433.882.182.088.291.074.397-.05.106-.124.453-.526.574-.707.121-.18.243-.153.408-.094.165.059 1.045.493 1.22.582.176.088.292.133.337.208.044.075.044.437-.1.841z"/>
+            <path fill="currentColor" d="M12.031 2c-5.514 0-9.99 4.476-9.991 9.991 0 1.751.455 3.456 1.316 4.962L2 22l5.222-1.37c1.464.8 3.102 1.22 4.805 1.222.001 0 .002 0 .003 0 5.514 0 9.991-4.476 9.992-9.991.001-5.515-4.475-9.991-9.991-9.991zm0 18.215c-1.554-.002-3.078-.415-4.407-1.196l-.316-.187-3.273.858.873-3.191-.205-.326c-.859-1.358-1.314-2.936-1.314-4.561 0-4.634 3.77-8.404 8.406-8.404.004 0 .007 0 .011 0 4.633 0 8.403 3.77 8.403 8.403 0 4.633-3.77 8.404-8.404 8.406z"/>
+        </svg>
+    </a>
 
     <script>
         function scrollToSection(e, id) {
