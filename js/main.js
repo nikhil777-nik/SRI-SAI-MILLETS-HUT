@@ -145,8 +145,8 @@ const splashTimer = setInterval(() => {
             if (splashScreen) {
                 splashScreen.classList.add('hidden');
                 document.body.style.overflow = '';
-                setTimeout(() => splashScreen.remove(), 800);
+                setTimeout(() => splashScreen.remove(), 600);
             }
-        }, 400);
+        }, 150);
     }
-}, 200);
+}, 80);

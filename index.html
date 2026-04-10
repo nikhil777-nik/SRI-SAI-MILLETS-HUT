@@ -23,7 +23,7 @@
                 <desc>Animated step-by-step logo build</desc>
 
                 <!-- Step 1: Circle frame -->
-                <g id="s1" style="opacity:0; transition:opacity 0.2s;">
+                <g id="s1" style="opacity:0; transition:opacity 0.06s;">
                     <circle cx="340" cy="210" r="190" fill="#FFF8EC" stroke="#C88A2A" stroke-width="2.5"/>
                     <circle cx="340" cy="22" r="5" fill="#C88A2A"/>
                     <circle cx="340" cy="398" r="5" fill="#C88A2A"/>
@@ -36,13 +36,13 @@
                 </g>
 
                 <!-- Step 2: Roof -->
-                <g id="s2" style="opacity:0; transition:opacity 0.2s;">
+                <g id="s2" style="opacity:0; transition:opacity 0.06s;">
                     <polygon points="340,85 248,190 432,190" fill="#4A7C3F"/>
                     <line x1="340" y1="85" x2="340" y2="190" stroke="#3B6B30" stroke-width="1" opacity="0.4"/>
                 </g>
 
                 <!-- Step 3: Hut body & door -->
-                <g id="s3" style="opacity:0; transition:opacity 0.2s;">
+                <g id="s3" style="opacity:0; transition:opacity 0.06s;">
                     <rect x="262" y="190" width="156" height="108" fill="#7B4F1E" rx="2"/>
                     <rect x="313" y="228" width="54" height="70" fill="#3B2A10" rx="4"/>
                     <ellipse cx="340" cy="230" rx="27" ry="11" fill="#3B2A10"/>
@@ -56,7 +56,7 @@
                 </g>
 
                 <!-- Step 4: Left millet stalk -->
-                <g id="s4" style="opacity:0; transition:opacity 0.2s;">
+                <g id="s4" style="opacity:0; transition:opacity 0.06s;">
                     <path d="M232,298 C230,265 228,235 226,195" stroke="#5C8C3A" stroke-width="2.5" fill="none"/>
                     <ellipse cx="224" cy="193" rx="7" ry="12" fill="#C88A2A"/>
                     <ellipse cx="218" cy="205" rx="6" ry="9" fill="#C88A2A" opacity="0.85"/>
@@ -70,7 +70,7 @@
                 </g>
 
                 <!-- Step 5: Right millet stalk -->
-                <g id="s5" style="opacity:0; transition:opacity 0.2s;">
+                <g id="s5" style="opacity:0; transition:opacity 0.06s;">
                     <path d="M448,298 C450,265 452,235 454,195" stroke="#5C8C3A" stroke-width="2.5" fill="none"/>
                     <ellipse cx="456" cy="193" rx="7" ry="12" fill="#C88A2A"/>
                     <ellipse cx="450" cy="205" rx="6" ry="9" fill="#C88A2A" opacity="0.85"/>
@@ -84,7 +84,7 @@
                 </g>
 
                 <!-- Step 6: Name text -->
-                <g id="s6" style="opacity:0; transition:opacity 0.2s;">
+                <g id="s6" style="opacity:0; transition:opacity 0.06s;">
                     <text x="340" y="-180" text-anchor="middle" font-family="Georgia,serif" font-size="24" font-weight="700" fill="#C88A2A" letter-spacing="5">SRI SAI</text>
                     <line x1="172" y1="-165" x2="278" y2="-165" stroke="#C88A2A" stroke-width="1.5"/>
                     <line x1="402" y1="-165" x2="508" y2="-165" stroke="#C88A2A" stroke-width="1.5"/>
@@ -93,7 +93,7 @@
                 </g>
 
                 <!-- Step 7: Tagline -->
-                <g id="s7" style="opacity:0; transition:opacity 0.2s;">
+                <g id="s7" style="opacity:0; transition:opacity 0.06s;">
                     <text x="340" y="-15" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="#6B4E1A" letter-spacing="3">— NATURE'S FINEST GRAINS —</text>
                     <circle cx="280" cy="15" r="3" fill="#C88A2A" opacity="0.5"/>
                     <circle cx="340" cy="15" r="4" fill="#C88A2A" opacity="0.8"/>
@@ -173,8 +173,26 @@
     <section id="idli-snacks" class="dark-theme-section">
         <div class="dark-theme-overlay">
             <div class="dark-theme-content">
+
+                <!-- Additional Charges Bar (top-right) -->
+                <div style="display: flex; justify-content: flex-end; margin-bottom: 20px;">
+                    <div style="
+                        display: inline-flex;
+                        align-items: center;
+                        gap: 10px;
+                        background: rgba(200,138,42,0.12);
+                        border: 1px solid rgba(200,138,42,0.35);
+                        border-radius: 50px;
+                        padding: 7px 20px;
+                    ">
+                        <span style="font-size: 13px; color: #E5CD82;">📦</span>
+                        <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: rgba(255,255,255,0.55); font-weight: 500;">Parcel Charges:</span>
+                        <strong style="font-size: 12px; color: var(--accent-gold);">₹10 extra</strong>
+                    </div>
+                </div>
+
                 <span class="eyebrow gold reveal text-center" style="display:block;">MORNING ESSENTIALS</span>
-                <h2 class="section-title white-text text-center reveal hover-lift">Breakfast &amp; Snacks</h2>
+                <h2 class="section-title white-text text-center reveal hover-lift">Breakfast</h2>
 
                 <div class="tiffins-grid mt-32">
                     <div class="card-dark-translucent reveal hover-lift">
@@ -289,17 +307,21 @@
         <div class="dark-theme-overlay">
             <div class="dark-theme-content">
                 <span class="eyebrow gold reveal text-center" style="display:block;">THE SUNSET SELECTION</span>
-                <h2 class="section-title white-text text-center reveal hover-lift">Evening &amp; Specials</h2>
+                <h2 class="section-title white-text text-center reveal hover-lift">Evening</h2>
 
-                <div class="tiffins-grid mt-32">
-                    <div class="card-dark-translucent reveal hover-lift">
-                        <h3 class="subsection-title" style="color: var(--accent-gold);">🌆 Evening Specials</h3>
+                <div class="card-dark-translucent reveal hover-lift mt-32">
+                    <h3 class="subsection-title" style="color: var(--accent-gold); margin-bottom: 24px;">🌆 Evening Specials</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0 40px;">
+                        <!-- Column 1 -->
                         <ul class="clean-list" style="display: flex; flex-direction: column; gap: 12px;">
                             <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px;"><span>Mysore Bonda</span><strong style="color:var(--accent-gold);">50/-</strong></li>
                             <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px;"><span>Sprouts Wada</span><strong style="color:var(--accent-gold);">60/-</strong></li>
                             <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px;"><span>Millets Punugulu</span><strong style="color:var(--accent-gold);">60/-</strong></li>
                             <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px;"><span>Millets Mirchi</span><strong style="color:var(--accent-gold);">60/-</strong></li>
                             <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px;"><span>Madhur Wada</span><strong style="color:var(--accent-gold);">60/-</strong></li>
+                        </ul>
+                        <!-- Column 2 -->
+                        <ul class="clean-list" style="display: flex; flex-direction: column; gap: 12px;">
                             <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px;"><span>Uggani Bajji</span><strong style="color:var(--accent-gold);">70/-</strong></li>
                             <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px;"><span>Chicken Dosa</span><strong style="color:var(--accent-gold);">130/-</strong></li>
                             <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px;"><span>Chicken Idli</span><strong style="color:var(--accent-gold);">130/-</strong></li>
@@ -307,16 +329,12 @@
                             <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px;"><span>Chicken Wada</span><strong style="color:var(--accent-gold);">150/-</strong></li>
                         </ul>
                     </div>
-                    <div class="card-dark-translucent reveal hover-lift" style="transition-delay: 0.1s;">
-                        <h3 class="subsection-title" style="color: var(--accent-gold);">📦 Additional Charges</h3>
-                        <ul class="clean-list" style="display: flex; flex-direction: column; gap: 12px;">
-                            <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px;"><span>Parcel Charges</span><strong style="color:var(--accent-gold);">10/- extra</strong></li>
-                        </ul>
-                    </div>
                 </div>
+
             </div>
         </div>
     </section>
+
 
     <!-- ═══════════════════════════════════════════════════════════
          LOCATION SECTION
