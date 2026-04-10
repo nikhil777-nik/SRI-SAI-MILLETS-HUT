@@ -651,9 +651,9 @@ a {
 .footer-links a:hover { color: var(--accent-gold); }
 
 /* Section Backgrounds */
-#evening-specials { background-image: url('https://static.toiimg.com/thumb/82571270.cms?imgsize=443554&width=800&height=800'); }
-#tiffins { background-image: url('assets/morning_tiffins_bg.png'); margin-top: 0; }
-#rotis-curries { background-image: url('assets/rotis_curries_bg.png'); }
+#specials-addons { background-image: url('https://static.toiimg.com/thumb/82571270.cms?imgsize=443554&width=800&height=800'); }
+#idli-snacks { background-image: url('assets/morning_tiffins_bg.png'); margin-top: 0; }
+#dosas-pesarattus { background-image: url('assets/rotis_curries_bg.png'); }
 
 /* Beautiful UI Enhancements */
 .reveal, .reveal-left, .reveal-right, .reveal-scale {

@@ -8,100 +8,27 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/menu.css">
 </head>
 <body>
     <!-- Splash Screen -->
     <div id="splash-screen">
         <div class="wrapper">
-
             <svg viewBox="0 -250 680 750" xmlns="http://www.w3.org/2000/svg">
                 <title>Sri Sai Millets Hut Logo</title>
                 <desc>Animated step-by-step logo build</desc>
-
-                <!-- Step 1: Circle frame -->
-                <g id="s1" style="opacity:0; transition:opacity 0.2s;">
-                    <circle cx="340" cy="210" r="190" fill="#FFF8EC" stroke="#C88A2A" stroke-width="2.5"/>
-                    <circle cx="340" cy="22" r="5" fill="#C88A2A"/>
-                    <circle cx="340" cy="398" r="5" fill="#C88A2A"/>
-                    <circle cx="152" cy="210" r="5" fill="#C88A2A"/>
-                    <circle cx="528" cy="210" r="5" fill="#C88A2A"/>
-                    <circle cx="206" cy="76" r="3.5" fill="#C88A2A" opacity="0.6"/>
-                    <circle cx="474" cy="76" r="3.5" fill="#C88A2A" opacity="0.6"/>
-                    <circle cx="206" cy="344" r="3.5" fill="#C88A2A" opacity="0.6"/>
-                    <circle cx="474" cy="344" r="3.5" fill="#C88A2A" opacity="0.6"/>
-                </g>
-
-                <!-- Step 2: Roof -->
-                <g id="s2" style="opacity:0; transition:opacity 0.2s;">
-                    <polygon points="340,85 248,190 432,190" fill="#4A7C3F"/>
-                    <line x1="340" y1="85" x2="340" y2="190" stroke="#3B6B30" stroke-width="1" opacity="0.4"/>
-                </g>
-
-                <!-- Step 3: Hut body & door -->
-                <g id="s3" style="opacity:0; transition:opacity 0.2s;">
-                    <rect x="262" y="190" width="156" height="108" fill="#7B4F1E" rx="2"/>
-                    <rect x="313" y="228" width="54" height="70" fill="#3B2A10" rx="4"/>
-                    <ellipse cx="340" cy="230" rx="27" ry="11" fill="#3B2A10"/>
-                    <rect x="276" y="206" width="26" height="22" fill="#3B2A10" rx="2"/>
-                    <line x1="289" y1="206" x2="289" y2="228" stroke="#5C3A15" stroke-width="1"/>
-                    <line x1="276" y1="217" x2="302" y2="217" stroke="#5C3A15" stroke-width="1"/>
-                    <rect x="378" y="206" width="26" height="22" fill="#3B2A10" rx="2"/>
-                    <line x1="391" y1="206" x2="391" y2="228" stroke="#5C3A15" stroke-width="1"/>
-                    <line x1="378" y1="217" x2="404" y2="217" stroke="#5C3A15" stroke-width="1"/>
-                    <line x1="248" y1="298" x2="432" y2="298" stroke="#7B4F1E" stroke-width="1.5" opacity="0.5"/>
-                </g>
-
-                <!-- Step 4: Left millet stalk -->
-                <g id="s4" style="opacity:0; transition:opacity 0.2s;">
-                    <path d="M232,298 C230,265 228,235 226,195" stroke="#5C8C3A" stroke-width="2.5" fill="none"/>
-                    <ellipse cx="224" cy="193" rx="7" ry="12" fill="#C88A2A"/>
-                    <ellipse cx="218" cy="205" rx="6" ry="9" fill="#C88A2A" opacity="0.85"/>
-                    <ellipse cx="230" cy="202" rx="6" ry="9" fill="#C88A2A" opacity="0.85"/>
-                    <ellipse cx="213" cy="216" rx="5" ry="8" fill="#C88A2A" opacity="0.7"/>
-                    <ellipse cx="235" cy="212" rx="5" ry="8" fill="#C88A2A" opacity="0.7"/>
-                    <ellipse cx="220" cy="226" rx="4" ry="7" fill="#C88A2A" opacity="0.55"/>
-                    <ellipse cx="230" cy="223" rx="4" ry="7" fill="#C88A2A" opacity="0.55"/>
-                    <path d="M229,255 C218,246 207,236 202,224 C213,226 226,240 231,252Z" fill="#4A7C3F"/>
-                    <path d="M230,272 C243,263 255,253 260,239 C248,245 234,257 230,270Z" fill="#4A7C3F" opacity="0.75"/>
-                </g>
-
-                <!-- Step 5: Right millet stalk -->
-                <g id="s5" style="opacity:0; transition:opacity 0.2s;">
-                    <path d="M448,298 C450,265 452,235 454,195" stroke="#5C8C3A" stroke-width="2.5" fill="none"/>
-                    <ellipse cx="456" cy="193" rx="7" ry="12" fill="#C88A2A"/>
-                    <ellipse cx="450" cy="205" rx="6" ry="9" fill="#C88A2A" opacity="0.85"/>
-                    <ellipse cx="462" cy="202" rx="6" ry="9" fill="#C88A2A" opacity="0.85"/>
-                    <ellipse cx="445" cy="216" rx="5" ry="8" fill="#C88A2A" opacity="0.7"/>
-                    <ellipse cx="467" cy="212" rx="5" ry="8" fill="#C88A2A" opacity="0.7"/>
-                    <ellipse cx="450" cy="226" rx="4" ry="7" fill="#C88A2A" opacity="0.55"/>
-                    <ellipse cx="462" cy="223" rx="4" ry="7" fill="#C88A2A" opacity="0.55"/>
-                    <path d="M451,255 C462,246 473,236 478,224 C467,226 454,240 449,252Z" fill="#4A7C3F"/>
-                    <path d="M450,272 C437,263 425,253 420,239 C432,245 446,257 450,270Z" fill="#4A7C3F" opacity="0.75"/>
-                </g>
-
-                <!-- Step 6: Name text -->
-                <g id="s6" style="opacity:0; transition:opacity 0.2s;">
-                    <text x="340" y="-180" text-anchor="middle" font-family="Georgia,serif" font-size="24" font-weight="700" fill="#C88A2A" letter-spacing="5">SRI SAI</text>
-                    <line x1="172" y1="-165" x2="278" y="-165" stroke="#C88A2A" stroke-width="1.5"/>
-                    <line x1="402" y1="-165" x2="508" y="-165" stroke="#C88A2A" stroke-width="1.5"/>
-                    <text x="340" y="-110" text-anchor="middle" font-family="Georgia,serif" font-size="52" font-weight="700" fill="#3B2A10" letter-spacing="4">MILLETS</text>
-                    <text x="340" y="-60" text-anchor="middle" font-family="Georgia,serif" font-size="32" font-weight="700" fill="#4A7C3F" letter-spacing="12">HUT</text>
-                </g>
-
-                <!-- Step 7: Tagline -->
-                <g id="s7" style="opacity:0; transition:opacity 0.2s;">
-                    <text x="340" y="-15" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="#6B4E1A" letter-spacing="3">— NATURE'S FINEST GRAINS —</text>
-                    <circle cx="280" cy="15" r="3" fill="#C88A2A" opacity="0.5"/>
-                    <circle cx="340" cy="15" r="4" fill="#C88A2A" opacity="0.8"/>
-                    <circle cx="400" cy="15" r="3" fill="#C88A2A" opacity="0.5"/>
-                </g>
+                <g id="s1" style="opacity:0; transition:opacity 0.2s;"><circle cx="340" cy="210" r="190" fill="#FFF8EC" stroke="#C88A2A" stroke-width="2.5"/><circle cx="340" cy="22" r="5" fill="#C88A2A"/><circle cx="340" cy="398" r="5" fill="#C88A2A"/><circle cx="152" cy="210" r="5" fill="#C88A2A"/><circle cx="528" cy="210" r="5" fill="#C88A2A"/><circle cx="206" cy="76" r="3.5" fill="#C88A2A" opacity="0.6"/><circle cx="474" cy="76" r="3.5" fill="#C88A2A" opacity="0.6"/><circle cx="206" cy="344" r="3.5" fill="#C88A2A" opacity="0.6"/><circle cx="474" cy="344" r="3.5" fill="#C88A2A" opacity="0.6"/></g>
+                <g id="s2" style="opacity:0; transition:opacity 0.2s;"><polygon points="340,85 248,190 432,190" fill="#4A7C3F"/><line x1="340" y1="85" x2="340" y2="190" stroke="#3B6B30" stroke-width="1" opacity="0.4"/></g>
+                <g id="s3" style="opacity:0; transition:opacity 0.2s;"><rect x="262" y="190" width="156" height="108" fill="#7B4F1E" rx="2"/><rect x="313" y="228" width="54" height="70" fill="#3B2A10" rx="4"/><ellipse cx="340" cy="230" rx="27" ry="11" fill="#3B2A10"/><rect x="276" y="206" width="26" height="22" fill="#3B2A10" rx="2"/><line x1="289" y1="206" x2="289" y2="228" stroke="#5C3A15" stroke-width="1"/><line x1="276" y1="217" x2="302" y2="217" stroke="#5C3A15" stroke-width="1"/><rect x="378" y="206" width="26" height="22" fill="#3B2A10" rx="2"/><line x1="391" y1="206" x2="391" y2="228" stroke="#5C3A15" stroke-width="1"/><line x1="378" y1="217" x2="404" y2="217" stroke="#5C3A15" stroke-width="1"/><line x1="248" y1="298" x2="432" y2="298" stroke="#7B4F1E" stroke-width="1.5" opacity="0.5"/></g>
+                <g id="s4" style="opacity:0; transition:opacity 0.2s;"><path d="M232,298 C230,265 228,235 226,195" stroke="#5C8C3A" stroke-width="2.5" fill="none"/><ellipse cx="224" cy="193" rx="7" ry="12" fill="#C88A2A"/><ellipse cx="218" cy="205" rx="6" ry="9" fill="#C88A2A" opacity="0.85"/><ellipse cx="230" cy="202" rx="6" ry="9" fill="#C88A2A" opacity="0.85"/><ellipse cx="213" cy="216" rx="5" ry="8" fill="#C88A2A" opacity="0.7"/><ellipse cx="235" cy="212" rx="5" ry="8" fill="#C88A2A" opacity="0.7"/><ellipse cx="220" cy="226" rx="4" ry="7" fill="#C88A2A" opacity="0.55"/><ellipse cx="230" cy="223" rx="4" ry="7" fill="#C88A2A" opacity="0.55"/><path d="M229,255 C218,246 207,236 202,224 C213,226 226,240 231,252Z" fill="#4A7C3F"/><path d="M230,272 C243,263 255,253 260,239 C248,245 234,257 230,270Z" fill="#4A7C3F" opacity="0.75"/></g>
+                <g id="s5" style="opacity:0; transition:opacity 0.2s;"><path d="M448,298 C450,265 452,235 454,195" stroke="#5C8C3A" stroke-width="2.5" fill="none"/><ellipse cx="456" cy="193" rx="7" ry="12" fill="#C88A2A"/><ellipse cx="450" cy="205" rx="6" ry="9" fill="#C88A2A" opacity="0.85"/><ellipse cx="462" cy="202" rx="6" ry="9" fill="#C88A2A" opacity="0.85"/><ellipse cx="445" cy="216" rx="5" ry="8" fill="#C88A2A" opacity="0.7"/><ellipse cx="467" cy="212" rx="5" ry="8" fill="#C88A2A" opacity="0.7"/><ellipse cx="450" cy="226" rx="4" ry="7" fill="#C88A2A" opacity="0.55"/><ellipse cx="462" cy="223" rx="4" ry="7" fill="#C88A2A" opacity="0.55"/><path d="M451,255 C462,246 473,236 478,224 C467,226 454,240 449,252Z" fill="#4A7C3F"/><path d="M450,272 C437,263 425,253 420,239 C432,245 446,257 450,270Z" fill="#4A7C3F" opacity="0.75"/></g>
+                <g id="s6" style="opacity:0; transition:opacity 0.2s;"><text x="340" y="-180" text-anchor="middle" font-family="Georgia,serif" font-size="24" font-weight="700" fill="#C88A2A" letter-spacing="5">SRI SAI</text><line x1="172" y1="-165" x2="278" y2="-165" stroke="#C88A2A" stroke-width="1.5"/><line x1="402" y1="-165" x2="508" y2="-165" stroke="#C88A2A" stroke-width="1.5"/><text x="340" y="-110" text-anchor="middle" font-family="Georgia,serif" font-size="52" font-weight="700" fill="#3B2A10" letter-spacing="4">MILLETS</text><text x="340" y="-60" text-anchor="middle" font-family="Georgia,serif" font-size="32" font-weight="700" fill="#4A7C3F" letter-spacing="12">HUT</text></g>
+                <g id="s7" style="opacity:0; transition:opacity 0.2s;"><text x="340" y="-15" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="#6B4E1A" letter-spacing="3">— NATURE'S FINEST GRAINS —</text><circle cx="280" cy="15" r="3" fill="#C88A2A" opacity="0.5"/><circle cx="340" cy="15" r="4" fill="#C88A2A" opacity="0.8"/><circle cx="400" cy="15" r="3" fill="#C88A2A" opacity="0.5"/></g>
             </svg>
         </div>
     </div>
-    <script>
-        document.body.style.overflow = 'hidden'; // Prevent scroll during splash
-    </script>
+
     <!-- Navigation -->
     <nav class="navbar">
         <a href="#home" class="logo">
@@ -118,12 +45,16 @@
     </nav>
 
     <div id="home"></div>
+
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <span class="eyebrow">A LEGACY OF HEALTH</span>
             <h1>Our Imperial<br><em>Millet Selection</em></h1>
             <p>Experience the renaissance of ancient grains. Curated with traditional Nawabi spices and modern nutritional science.</p>
+            <div class="mt-32">
+                <a href="#menu" class="btn-primary" style="padding: 16px 40px; font-size: 14px; box-shadow: 0 10px 30px rgba(147, 115, 47, 0.4);">View Our Menu</a>
+            </div>
         </div>
         <div class="hero-image">
             <img src="assets/hero_dosa.png" alt="Millet Dosa Thali" fetchpriority="high" decoding="async">
@@ -132,17 +63,18 @@
 
     <!-- About Section -->
     <section id="about" class="menu-section mt-32" style="text-align: center; max-width: 800px;">
-        <span class="eyebrow reveal hover-lift">THE MILLET REVOLUTION</span>
-        <h2 class="section-title reveal hover-lift">Reviving Ancestral Wellness</h2>
-        <p class="muted-text mb-24 reveal hover-lift" style="font-size: 16px; line-height: 1.8;">
+        <span class="eyebrow reveal">THE MILLET REVOLUTION</span>
+        <h2 class="section-title reveal">Reviving Ancestral Wellness</h2>
+        <p class="muted-text mb-24 reveal" style="font-size: 16px; line-height: 1.8;">
             At Sri Sai Millets Hut, we believe that true health begins with what we put on our plates. 
             We have dedicated ourselves to reviving the lost glory of millets—ancient grains that naturally 
             nourish the body and sustain the earth. Our culinary experts skillfully blend traditional 
             Nawabi spices with these potent superfoods, delivering a taste that respects history while 
             empowering your modern lifestyle.
         </p>
-        <div class="reveal hover-lift" style="margin-top: 32px;">
+        <div class="reveal" style="margin-top: 32px; display: flex; gap: 16px; justify-content: center;">
             <a href="our-story.html" class="btn-primary" style="display:inline-block; padding: 12px 32px; font-size: 13px;">Read Our Full Story</a>
+            <a href="millet-spotlight.html" class="btn-primary" style="display:inline-block; padding: 12px 32px; font-size: 13px; background-color: var(--accent-dark);">Know Your Grain</a>
         </div>
     </section>
 
@@ -155,148 +87,62 @@
         </div>
     </div>
 
-    <!-- Idli & Snacks Section -->
-    <section id="idli-snacks" class="menu-section" style="margin-top: 40px;">
-        <h2 class="section-title text-center reveal hover-lift">Breakfast & Snacks</h2>
-        <div class="tiffins-grid">
-            <div class="card-white reveal hover-lift">
-                <h3 class="subsection-title" style="color: var(--accent-gold);">🥣 Idli Varieties</h3>
-                <ul class="clean-list" style="display: flex; flex-direction: column; gap: 12px;">
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Ragi Idli (2 pcs)</span><strong style="color:var(--accent-gold);">30/-</strong></li>
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Ragi Idli (3 pcs)</span><strong style="color:var(--accent-gold);">40/-</strong></li>
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Ragi Idli (4 pcs)</span><strong style="color:var(--accent-gold);">50/-</strong></li>
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Ragi Idli (2 pcs) + Onion Bonda</span><strong style="color:var(--accent-gold);">50/-</strong></li>
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Ragi Idli + Mysore Bonda</span><strong style="color:var(--accent-gold);">50/-</strong></li>
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Ragi Idli + Sprouts Wada</span><strong style="color:var(--accent-gold);">60/-</strong></li>
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Ragi Idli + Wada</span><strong style="color:var(--accent-gold);">60/-</strong></li>
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Ghee Karam Idli (2 pcs)</span><strong style="color:var(--accent-gold);">50/-</strong></li>
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Ghee Karam Idli (3 pcs)</span><strong style="color:var(--accent-gold);">70/-</strong></li>
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Ghee Karam Idli (4 pcs)</span><strong style="color:var(--accent-gold);">90/-</strong></li>
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Sambar Idli (2 pcs)</span><strong style="color:var(--accent-gold);">50/-</strong></li>
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Sambar Idli (3 pcs)</span><strong style="color:var(--accent-gold);">60/-</strong></li>
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Sambar Idli (2 pcs) + Wada</span><strong style="color:var(--accent-gold);">70/-</strong></li>
-                </ul>
-            </div>
-            
-            <div class="card-warm reveal hover-lift">
-                <h3 class="subsection-title" style="color: var(--accent-gold);">🍽️ Snacks & Tiffins</h3>
-                <ul class="clean-list" style="display: flex; flex-direction: column; gap: 12px;">
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Onion Bonda</span><strong style="color:var(--accent-gold);">50/-</strong></li>
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Mysore Bonda</span><strong style="color:var(--accent-gold);">50/-</strong></li>
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Upma</span><strong style="color:var(--accent-gold);">50/-</strong></li>
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Wada</span><strong style="color:var(--accent-gold);">60/-</strong></li>
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Sprouts Wada</span><strong style="color:var(--accent-gold);">60/-</strong></li>
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Wheat Upma</span><strong style="color:var(--accent-gold);">60/-</strong></li>
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Uggani Bajji</span><strong style="color:var(--accent-gold);">70/-</strong></li>
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Millet Upma (Pongal)</span><strong style="color:var(--accent-gold);">80/-</strong></li>
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Ghee Millet Upma (Pongal)</span><strong style="color:var(--accent-gold);">110/-</strong></li>
-                </ul>
+    <!-- Menu Sections -->
+    <section id="idli-snacks" class="dark-theme-section">
+        <div class="dark-theme-overlay">
+            <div class="dark-theme-content">
+                <span class="eyebrow gold reveal text-center" style="display:block;">MORNING ESSENTIALS</span>
+                <h2 class="section-title white-text text-center reveal">Breakfast & Snacks</h2>
+                <div class="tiffins-grid mt-32"><!-- Dynamic Content --></div>
             </div>
         </div>
     </section>
 
-    <!-- Dosas & Pesarattus Section -->
     <section id="dosas-pesarattus" class="dark-theme-section">
         <div class="dark-theme-overlay">
             <div class="dark-theme-content">
                 <span class="eyebrow gold reveal">TRADITIONAL FAVORITES</span>
                 <h2 class="section-title white-text reveal">Dosas & Pesarattus</h2>
-                
-                <div class="dosas-columns mt-32">
-                    <div class="card-dark-translucent reveal hover-lift">
-                        <h3 class="subsection-title" style="color: var(--accent-gold);">🥞 Ragi & Millet Dosas</h3>
-                        <ul class="clean-list">
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Plain Ragi Dosa</span><strong style="color:var(--accent-gold);">50/-</strong></li>
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Masala Ragi Dosa</span><strong style="color:var(--accent-gold);">60/-</strong></li>
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Onion Ragi Dosa</span><strong style="color:var(--accent-gold);">60/-</strong></li>
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Ghee Ragi Dosa</span><strong style="color:var(--accent-gold);">70/-</strong></li>
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Wheat Upma Dosa</span><strong style="color:var(--accent-gold);">70/-</strong></li>
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Millet Upma (Pongal) Dosa</span><strong style="color:var(--accent-gold);">70/-</strong></li>
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Erra Karam Onion Dosa</span><strong style="color:var(--accent-gold);">80/-</strong></li>
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Ragi Egg Dosa</span><strong style="color:var(--accent-gold);">70/-</strong></li>
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Ragi Double Egg Dosa</span><strong style="color:var(--accent-gold);">80/-</strong></li>
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Egg Pesarattu Dosa</span><strong style="color:var(--accent-gold);">70/-</strong></li>
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Double Egg Pesarattu Dosa</span><strong style="color:var(--accent-gold);">80/-</strong></li>
-                        </ul>
-
-                        <h3 class="subsection-title mt-24" style="color: var(--accent-gold);">🌿 Pesarattu Varieties</h3>
-                        <ul class="clean-list">
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Plain Pesarattu</span><strong style="color:var(--accent-gold);">60/-</strong></li>
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Masala Pesarattu</span><strong style="color:var(--accent-gold);">70/-</strong></li>
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Upma Pesarattu</span><strong style="color:var(--accent-gold);">70/-</strong></li>
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Onion Pesarattu</span><strong style="color:var(--accent-gold);">80/-</strong></li>
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Wheat Upma Pesarattu</span><strong style="color:var(--accent-gold);">80/-</strong></li>
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Millets Upma (Pongal) Pesarattu</span><strong style="color:var(--accent-gold);">80/-</strong></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="card-dark-translucent reveal hover-lift" style="transition-delay: 0.1s;">
-                        <h3 class="subsection-title" style="color: var(--accent-gold);">🧈 Butter / Ghee Specials</h3>
-                        <ul class="clean-list">
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter/Ghee Plain Dosa</span><strong style="color:var(--accent-gold);">70/-</strong></li>
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter/Ghee Masala Dosa</span><strong style="color:var(--accent-gold);">80/-</strong></li>
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter/Ghee Upma Dosa</span><strong style="color:var(--accent-gold);">80/-</strong></li>
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter/Ghee Karam Dosa</span><strong style="color:var(--accent-gold);">80/-</strong></li>
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter/Ghee Onion Dosa</span><strong style="color:var(--accent-gold);">90/-</strong></li>
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter/Ghee Wheat Upma Dosa</span><strong style="color:var(--accent-gold);">90/-</strong></li>
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter/Ghee Millet Upma (Pongal) Dosa</span><strong style="color:var(--accent-gold);">90/-</strong></li>
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter/Ghee Erra Karam Mirchi Onion Dosa</span><strong style="color:var(--accent-gold);">90/-</strong></li>
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter/Ghee Plain Pesarattu</span><strong style="color:var(--accent-gold);">80/-</strong></li>
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter/Ghee Masala Pesarattu</span><strong style="color:var(--accent-gold);">90/-</strong></li>
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter/Ghee Upma Pesarattu</span><strong style="color:var(--accent-gold);">90/-</strong></li>
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter/Ghee Onion Pesarattu</span><strong style="color:var(--accent-gold);">100/-</strong></li>
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter/Ghee Wheat Upma Pesarattu</span><strong style="color:var(--accent-gold);">100/-</strong></li>
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter/Ghee Millets Upma (Pongal) Pesarattu</span><strong style="color:var(--accent-gold);">100/-</strong></li>
-                        </ul>
-                        
-                        <h3 class="subsection-title mt-24" style="color: var(--accent-gold);">🧀 Premium Dosas</h3>
-                        <ul class="clean-list">
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter Paneer Dosa</span><strong style="color:var(--accent-gold);">120/-</strong></li>
-                            <li style="display:flex; justify-content:space-between; margin-bottom: 8px;"><span>Butter Palak Paneer Dosa</span><strong style="color:var(--accent-gold);">130/-</strong></li>
-                        </ul>
-                    </div>
-                </div>
+                <div class="dosas-columns mt-32"><!-- Dynamic Content --></div>
             </div>
         </div>
     </section>
 
-    <!-- Specials & Add-ons -->
-    <section id="specials-addons" class="menu-section mt-32 mb-32">
-        <h2 class="section-title text-center reveal hover-lift">Evening & Specials</h2>
-        <div class="tiffins-grid">
-            <div class="card-white reveal hover-lift">
-                <h3 class="subsection-title" style="color: var(--accent-gold);">🌆 Evening Specials</h3>
-                <ul class="clean-list" style="display: flex; flex-direction: column; gap: 12px;">
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Mysore Bonda</span><strong style="color:var(--accent-gold);">50/-</strong></li>
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Sprouts Wada</span><strong style="color:var(--accent-gold);">60/-</strong></li>
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Millets Punugulu</span><strong style="color:var(--accent-gold);">60/-</strong></li>
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Millets Mirchi</span><strong style="color:var(--accent-gold);">60/-</strong></li>
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Madhur Wada</span><strong style="color:var(--accent-gold);">60/-</strong></li>
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Uggani Bajji</span><strong style="color:var(--accent-gold);">70/-</strong></li>
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Chicken Dosa</span><strong style="color:var(--accent-gold);">130/-</strong></li>
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Chicken Idli</span><strong style="color:var(--accent-gold);">130/-</strong></li>
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Chicken Keema Dosa</span><strong style="color:var(--accent-gold);">140/-</strong></li>
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Chicken Wada</span><strong style="color:var(--accent-gold);">150/-</strong></li>
-                </ul>
-            </div>
-            <div class="card-warm reveal hover-lift">
-                <h3 class="subsection-title" style="color: var(--accent-gold);">📦 Additional Charges</h3>
-                <ul class="clean-list" style="display: flex; flex-direction: column; gap: 12px;">
-                    <li style="display:flex; justify-content:space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 8px;"><span>Parcel Charges</span><strong style="color:var(--accent-gold);">10/- extra</strong></li>
-                </ul>
+    <section id="specials-addons" class="dark-theme-section">
+        <div class="dark-theme-overlay">
+            <div class="dark-theme-content">
+                <span class="eyebrow gold reveal text-center" style="display:block;">THE SUNSET SELECTION</span>
+                <h2 class="section-title white-text text-center reveal">Evening & Specials</h2>
+                <div class="tiffins-grid mt-32"><!-- Dynamic Content --></div>
             </div>
         </div>
-    </section>    <!-- Location Section -->
-    <section id="location" class="menu-section mt-32">
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="menu-section mt-32 mb-60">
         <div class="section-header-line">
-            <h2 class="section-title">Location</h2>
+            <h2 class="section-title">Visit the Hut</h2>
             <div class="line"></div>
         </div>
-        <div class="location-container" style="text-align: center;">
-            <p class="muted-text mb-24">Visit us and experience the legacy of health.</p>
-            <a href="https://share.google/EGla2NW96xy7uU0i9" target="_blank" class="btn-primary" style="display:inline-block; margin-bottom: 24px; padding: 12px 24px; font-size: 13px;">View on Google Maps</a>
-            <div style="border-radius: var(--radius-lg); overflow: hidden; width: 100%; height: 350px; background-color: var(--card-warm); display: flex; align-items: center; justify-content: center;">
-                <iframe src="https://maps.google.com/maps?q=SRI%20SAI%20MILLET%20HUT&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="location-grid" style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 40px; align-items: start;">
+            <div class="location-info reveal" style="text-align: left;">
+                <div class="card-white p-32">
+                    <h3 class="subsection-title" style="color: var(--accent-gold); margin-bottom: 24px;">📍 Our Prime Location</h3>
+                    <p class="muted-text mb-16"><strong>Address:</strong><br>Plot No. 12, GachiBowli, Opposite DLF Cyber City,<br>Hyderabad, Telangana 500032</p>
+                    <h3 class="subsection-title mt-24" style="color: var(--accent-gold); margin-bottom: 24px;">⏰ Operating Hours</h3>
+                    <ul class="clean-list muted-text" style="gap: 8px; display: flex; flex-direction: column;">
+                        <li><strong>Mon - Fri:</strong> 7:00 AM - 11:30 AM | 5:00 PM - 10:30 PM</li>
+                        <li><strong>Sat - Sun:</strong> 7:00 AM - 12:00 PM | 5:30 PM - 11:00 PM</li>
+                    </ul>
+                    <h3 class="subsection-title mt-24" style="color: var(--accent-gold); margin-bottom: 24px;">📞 Contact Us</h3>
+                    <p class="muted-text"><strong>Phone:</strong> +91 98765 43210</p>
+                    <div class="mt-32">
+                        <a href="https://share.google/EGla2NW96xy7uU0i9" target="_blank" class="btn-primary">Get Directions</a>
+                    </div>
+                </div>
+            </div>
+            <div class="location-map reveal" style="border-radius: var(--radius-lg); overflow: hidden; height: 100%; min-height: 450px; background-color: var(--card-warm); box-shadow: var(--shadow-md);">
+                <iframe src="https://maps.google.com/maps?q=SRI%20SAI%20MILLET%20HUT&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
@@ -316,189 +162,29 @@
                 <div class="footer-col">
                     <span class="eyebrow small">RESOURCES</span>
                     <ul class="clean-list footer-links">
-                        <li><a href="#">Nutrition Guide</a></li>
-                        <li><a href="#">Sustainability</a></li>
-                        <li><a href="#">Our Farmers</a></li>
+                        <li><a href="millet-spotlight.html">Millet Spotlight</a></li>
+                        <li><a href="our-story.html">Our Story</a></li>
+                        <li><a href="#menu">Full Menu</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <span class="eyebrow small">LEGAL</span>
+                    <span class="eyebrow small">QUICK LINKS</span>
                     <ul class="clean-list footer-links">
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#location">Find Us</a></li>
+                        <li><a href="https://wa.me/919876543210" target="_blank">Order on WhatsApp</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Back to top button -->
-    <button id="back-to-top" class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+    <button id="back-to-top" class="back-to-top">↑</button>
 
-    <script>
-        function scrollToSection(e, id) {
-            const el = document.getElementById(id);
-            if (el) {
-                // Determine offset for header to look nice and avoid covered content by sticky menu
-                const y = el.getBoundingClientRect().top + window.scrollY - 100;
-                window.scrollTo({top: y, behavior: 'smooth'});
-            }
-            if (e && e.currentTarget) {
-                document.querySelectorAll('.tab').forEach(tab => {
-                    tab.classList.remove('active');
-                });
-                e.currentTarget.classList.add('active');
-            }
-        }
-        
-        // Simple IntersectionObserver to highlight tab on scroll
-        const sections = document.querySelectorAll('section[id]:not(#location):not(#menu)');
-        const tabs = document.querySelectorAll('.tab');
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if(entry.isIntersecting) {
-                    const id = entry.target.getAttribute('id');
-                    tabs.forEach(tab => {
-                        tab.classList.remove('active');
-                        if (tab.getAttribute('onclick')?.includes(id)) {
-                            tab.classList.add('active');
-                        }
-                    });
-                }
-            });
-        }, { threshold: 0.3, rootMargin: "-100px 0px 0px 0px" });
-        
-        sections.forEach(section => observer.observe(section));
+    <a href="https://wa.me/919876543210" class="whatsapp-btn" target="_blank" style="position: fixed; bottom: 30px; left: 30px; z-index: 1000; background: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4); text-decoration: none; transition: transform 0.3s ease;">
+        <svg viewBox="0 0 448 512" width="30" fill="currentColor"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.2-8.5-44.2-27.1-16.4-14.6-27.4-32.7-30.6-38.2-3.2-5.6-.3-8.6 2.4-11.3 2.5-2.4 5.5-6.5 8.3-9.7 2.8-3.3 3.7-5.6 5.5-9.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.2 5.8 23.5 9.2 31.5 11.8 13.3 4.2 25.4 3.6 35 2.2 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+    </a>
 
-        // Top Navigation scroll logic
-        const navHome = document.getElementById('nav-home');
-        const navAbout = document.getElementById('nav-about');
-        const navMenu = document.getElementById('nav-menu');
-        const navLocation = document.getElementById('nav-location');
-        
-        const aboutSection = document.getElementById('about');
-        const menuSection = document.getElementById('menu');
-        const locationSection = document.getElementById('location');
-
-        window.addEventListener('scroll', () => {
-            if(!navHome || !navAbout || !navMenu || !navLocation) return;
-            
-            // Default remove all
-            navHome.classList.remove('active');
-            navAbout.classList.remove('active');
-            navMenu.classList.remove('active');
-            navLocation.classList.remove('active');
-
-            // Find current section
-            let scrollY = window.scrollY + 200; // offset
-
-            if (locationSection && locationSection.offsetTop <= scrollY) {
-                navLocation.classList.add('active');
-            } else if (menuSection && menuSection.offsetTop <= scrollY) {
-                navMenu.classList.add('active');
-            } else if (aboutSection && aboutSection.offsetTop <= scrollY) {
-                navAbout.classList.add('active');
-            } else {
-                navHome.classList.add('active');
-            }
-        });
-
-        // Add smooth scrolling to nav links
-        document.querySelectorAll('.nav-links a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (!href.startsWith('#')) return; // Let regular links navigate normally
-                
-                const targetId = href.substring(1);
-                const targetEl = document.getElementById(targetId);
-                
-                if (targetEl) {
-                    e.preventDefault();
-                    const y = targetEl.getBoundingClientRect().top + window.scrollY - 80;
-                    window.scrollTo({top: y, behavior: 'smooth'});
-                }
-            });
-        });
-
-        // Apply Premium UI Modifiers
-        document.querySelectorAll('.card-white, .card-warm, .card-dark-translucent, .curry-box, .combo-box').forEach(el => el.classList.add('hover-lift'));
-
-        // Advanced UX Story Flow (Stagger & Directional reveals)
-        document.querySelector('.tiffins-left')?.classList.add('reveal-left');
-        document.querySelector('.tiffins-right')?.classList.add('reveal-right');
-        document.querySelector('.hero-content')?.classList.add('reveal-left');
-        document.querySelector('.hero-image')?.classList.add('reveal-right');
-        
-        document.querySelectorAll('.special-item').forEach((el, index) => {
-            el.classList.add('reveal-scale');
-            el.style.transitionDelay = `${index * 0.15}s`;
-            el.classList.remove('reveal');
-        });
-
-        document.querySelectorAll('.section-title, .subsection-title').forEach(el => el.classList.add('reveal'));
-
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if(entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                    revealObserver.unobserve(entry.target); // Reveal only once
-                }
-            });
-        }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
-
-        document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale').forEach(el => revealObserver.observe(el));
-
-        // Back to top visibility logic
-        const backToTopBtn = document.getElementById('back-to-top');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 400) {
-                backToTopBtn.classList.add('visible');
-            } else {
-                backToTopBtn.classList.remove('visible');
-            }
-        });
-
-        // Splash Screen Logic
-        const splashSteps = [
-            { id: 's1', label: 'Step 1 of 7 — Circle frame' },
-            { id: 's2', label: 'Step 2 of 7 — Roof' },
-            { id: 's3', label: 'Step 3 of 7 — Hut body & door' },
-            { id: 's4', label: 'Step 4 of 7 — Left millet stalk' },
-            { id: 's5', label: 'Step 5 of 7 — Right millet stalk' },
-            { id: 's6', label: 'Step 6 of 7 — Name text' },
-            { id: 's7', label: 'Step 7 of 7 — Tagline (complete!)' }
-        ];
-
-        let splashCurrent = 0;
-
-        function renderSplash() {
-            splashSteps.forEach((s, i) => {
-                const el = document.getElementById(s.id);
-                if (el) el.style.opacity = i <= splashCurrent ? '1' : '0';
-            });
-        }
-
-        renderSplash();
-
-        const splashTimer = setInterval(() => {
-            if (splashCurrent < splashSteps.length - 1) {
-                splashCurrent++;
-                renderSplash();
-            } else {
-                clearInterval(splashTimer);
-                setTimeout(() => {
-                    const splashScreen = document.getElementById('splash-screen');
-                    if (splashScreen) {
-                        splashScreen.classList.add('hidden');
-                        document.body.style.overflow = ''; // Restore scrolling
-                        setTimeout(() => {
-                            splashScreen.remove();
-                        }, 800); // Wait for CSS transition
-                    }
-                }, 400); // Pause on last step before fading
-            }
-        }, 200); // Faster for splash screen
-    </script>
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
+
