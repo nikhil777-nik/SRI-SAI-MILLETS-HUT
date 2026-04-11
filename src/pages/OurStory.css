@@ -1,0 +1,50 @@
+.story-hero {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: var(--accent-dark);
+    color: white;
+    border-bottom: 2px solid var(--accent-gold);
+}
+
+.story-hero h1 {
+    font-size: 56px;
+    margin-bottom: 24px;
+    font-family: var(--font-heading);
+}
+
+.story-hero h1 em {
+    color: var(--accent-gold);
+    font-style: italic;
+}
+
+.story-content {
+    max-width: 800px;
+    margin: 64px auto;
+    padding: 0 20px;
+}
+
+.story-text-block {
+    margin-bottom: 48px;
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+.story-text-block h3 {
+    font-size: 24px;
+    color: var(--accent-dark);
+    margin-bottom: 16px;
+    font-family: var(--font-heading);
+}
+
+.quote-box {
+    background-color: var(--card-warm);
+    padding: 40px;
+    border-left: 4px solid var(--accent-gold);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    margin: 48px 0;
+    font-style: italic;
+    font-size: 20px;
+    color: var(--accent-dark);
+    font-family: var(--font-heading);
+}
