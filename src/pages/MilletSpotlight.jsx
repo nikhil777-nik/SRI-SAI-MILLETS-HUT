@@ -81,17 +81,27 @@ const grainsData = [
 const MilletSpotlight = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [fade, setFade] = useState(false);
+    const [animateBars, setAnimateBars] = useState(false);
     
     const activeGrain = grainsData[currentIndex];
 
     const handleSwitch = (idx) => {
         if (idx === currentIndex) return;
         setFade(true); // Trigger fade out
+        setAnimateBars(false); // Reset bars to 0% width
         setTimeout(() => {
             setCurrentIndex(idx);
             setFade(false); // Trigger fade in
+            setTimeout(() => setAnimateBars(true), 100); // Wait 100ms then animate bars
         }, 300);
     };
+
+    // Initial load animation for bars
+    useEffect(() => {
+        setTimeout(() => setAnimateBars(true), 200);
+    }, []);
+
+    const fadeClass = fade ? 'fade-out' : 'fade-target';
 
     return (
         <div>
@@ -118,14 +128,14 @@ const MilletSpotlight = () => {
                         ))}
                     </div>
 
-                    <div className={`grain-card reveal ${fade ? 'fade-out' : 'fade-target'}`}>
+                    <div className="grain-card reveal">
                         <div className="card-left">
-                            <span className="grain-number fade-target">{activeGrain.num}</span>
-                            <span className="grain-badge fade-target">✦ {activeGrain.badge}</span>
-                            <h3 className="grain-title fade-target">{activeGrain.title}</h3>
-                            <p className="grain-aka fade-target">{activeGrain.aka}</p>
-                            <p className="grain-desc fade-target">{activeGrain.desc}</p>
-                            <div className="benefit-callout fade-target">
+                            <span className={`grain-number ${fadeClass}`}>{activeGrain.num}</span>
+                            <span className={`grain-badge ${fadeClass}`}>✦ {activeGrain.badge}</span>
+                            <h3 className={`grain-title ${fadeClass}`}>{activeGrain.title}</h3>
+                            <p className={`grain-aka ${fadeClass}`}>{activeGrain.aka}</p>
+                            <p className={`grain-desc ${fadeClass}`}>{activeGrain.desc}</p>
+                            <div className={`benefit-callout ${fadeClass}`}>
                                 <strong>Why it matters:</strong> {activeGrain.benefit}
                             </div>
                         </div>
@@ -135,11 +145,10 @@ const MilletSpotlight = () => {
                                 <div className="block-label">Nutritional potency (% of daily value)</div>
                                 <div id="nutrient-bars">
                                     {activeGrain.nutrients.map((n, i) => (
-                                        <div className="nutrient-row" key={i}>
+                                        <div className="nutrient-row" key={`${activeGrain.id}-${i}`}>
                                             <span className="n-label">{n.label}</span>
                                             <div className="n-track">
-                                                {/* Uses key to force re-render/re-animation */}
-                                                <div key={activeGrain.id} className="n-fill" style={{ width: `${n.val}%`, background: n.color }}></div>
+                                                <div className="n-fill" style={{ width: animateBars ? `${n.val}%` : '0%', background: n.color }}></div>
                                             </div>
                                             <span className="n-val">{n.val}%</span>
                                         </div>
@@ -162,17 +171,17 @@ const MilletSpotlight = () => {
                         </div>
                     </div>
 
-                    <div className={`stats-row reveal ${fade ? 'fade-out' : 'fade-target'}`}>
+                    <div className="stats-row reveal">
                         <div className="stat-cell">
-                            <div className="stat-value fade-target">{activeGrain.stats[0]}</div>
+                            <div className={`stat-value ${fadeClass}`}>{activeGrain.stats[0]}</div>
                             <div className="stat-label">{activeGrain.stats[1]}</div>
                         </div>
                         <div className="stat-cell">
-                            <div className="stat-value fade-target">{activeGrain.stats[2]}</div>
+                            <div className={`stat-value ${fadeClass}`}>{activeGrain.stats[2]}</div>
                             <div className="stat-label">{activeGrain.stats[3]}</div>
                         </div>
                         <div className="stat-cell">
-                            <div className="stat-value fade-target">{activeGrain.stats[4]}</div>
+                            <div className={`stat-value ${fadeClass}`}>{activeGrain.stats[4]}</div>
                             <div className="stat-label">{activeGrain.stats[5]}</div>
                         </div>
                     </div>
