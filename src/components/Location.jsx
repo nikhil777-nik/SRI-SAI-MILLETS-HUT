@@ -14,8 +14,8 @@ const Location = () => {
                     <div className="info-block mb-24">
                         <span className="eyebrow small" style={{ marginBottom: '8px', display: 'block' }}>ADDRESS</span>
                         <p className="muted-text" style={{ color: 'var(--accent-dark)', fontWeight: '500' }}>
-                            123, Heritage Square, Near Tech Park<br/>
-                            Madhapur, Hyderabad, Telangana 500081
+                            SRI SAI MILLETS HUT, Financial District<br/>
+                            Nanakramguda, Hyderabad, Telangana 500032
                         </p>
                     </div>
 
